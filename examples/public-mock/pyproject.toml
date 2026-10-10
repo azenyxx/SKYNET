@@ -1,0 +1,10 @@
+[project]
+name = "skynet-public-mock"
+version = "0.2.0"
+description = "Standalone deterministic SKYNET research fixture protocol"
+requires-python = ">=3.11"
+dependencies = ["pydantic>=2.13,<3"]
+[project.optional-dependencies]
+test = ["pytest>=9,<10"]
+[tool.pytest.ini_options]
+pythonpath = ["."]
