@@ -60,3 +60,16 @@ The repository owner selected the **MIT License** for this public repository. Se
 ## Security
 
 See [Security](SECURITY.md). Do not disclose sensitive findings publicly; a private reporting channel must be confirmed before accepting vulnerability reports.
+
+## Latest development update
+
+**PUBLIC-006 — October 12, 2026**
+
+Private engineering has progressed through SKYNET-001–005.
+SKYNET-006, covering scheduling, governed parallel execution,
+and evidence-backed recovery, remains under implementation.
+
+PostgreSQL runtime verification and independent qualification
+are still pending. No AGI/ASI capabilities are claimed.
+
+Read the [PUBLIC-006 Development Progress Update](docs/updates/PUBLIC-006.md).
