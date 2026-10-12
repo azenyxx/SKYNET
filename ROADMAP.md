@@ -10,3 +10,19 @@ This roadmap lists **research and verification gates**, not dates or performance
 6. **Research evaluation:** develop independently assessable experiments and meaningful human baselines before claiming advanced capabilities.
 
 Private SKYNET engineering tasks continue separately. Passing a local test or completing an architectural milestone does not demonstrate AGI or ASI.
+
+## October 2026 engineering checkpoint
+
+The current private implementation milestone is SKYNET-006:
+Scheduler and Parallel Cognition.
+
+The immediate engineering sequence is:
+
+1. Complete implementation and local verification.
+2. Conduct an independent implementation review.
+3. Execute PostgreSQL 17 runtime verification.
+4. Reassess public release eligibility for selected interfaces.
+
+See [PUBLIC-006](docs/updates/PUBLIC-006.md).
+
+These are engineering gates, not promised release dates.
