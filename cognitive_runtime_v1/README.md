@@ -19,4 +19,4 @@ done
 
 ## Publication status
 
-**REVIEW CANDIDATE ONLY — NOT AUTHORIZED FOR PUBLICATION.** The owner must review and approve this exact source set before GitHub publication. No license is granted or implied by this candidate; add a license only with the owner's explicit choice.
+**PUBLIC ISOLATED BASELINE — OWNER-AUTHORIZED SOURCE RELEASE.** This implementation is not production-ready and carries no trusted execution authority. No license has been granted.
