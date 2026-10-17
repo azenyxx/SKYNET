@@ -1,0 +1,58 @@
+{
+  "schema": "cog-verification-vectors-v1",
+  "positive": {
+    "findings": [
+      {
+        "code": "VERIFIED_CONSISTENCY",
+        "description": "Original input and isolated evidence are consistent; origin is untrusted.",
+        "schema_version": "cog-verification-finding-v1",
+        "severity": "INFO",
+        "stage": "COMPLETE"
+      }
+    ],
+    "original_evidence_commitment": "62082aeecc3cd0b781d8f57aa4aafeaa5d6a5c235fe0f2a6c80dfdf610aed751",
+    "original_request_commitment": "3c23b62e53a6d593028816e84d837781e4bc639b61616b19e617b7c2b160f5d5",
+    "production_authorized": false,
+    "schema_version": "cog-verification-decision-v1",
+    "status": "EVIDENCE_VERIFIED_ISOLATED",
+    "task_completion_authorized": false,
+    "trusted_verification": false
+  },
+  "positive_identity": "10e7172055c6c00bf4d958c9db60eb485ec87cfc6463cf123b326e354bb6fe80",
+  "changed_input": {
+    "findings": [
+      {
+        "code": "INVALID_REQUEST",
+        "description": "Tool request or revision binding failed.",
+        "schema_version": "cog-verification-finding-v1",
+        "severity": "ERROR",
+        "stage": "REQUEST"
+      }
+    ],
+    "original_evidence_commitment": null,
+    "original_request_commitment": null,
+    "production_authorized": false,
+    "schema_version": "cog-verification-decision-v1",
+    "status": "EVIDENCE_REJECTED",
+    "task_completion_authorized": false,
+    "trusted_verification": false
+  },
+  "missing_dependency": {
+    "findings": [
+      {
+        "code": "MISSING_DEPENDENCY",
+        "description": "An original verification dependency is missing.",
+        "schema_version": "cog-verification-finding-v1",
+        "severity": "ERROR",
+        "stage": "INPUT"
+      }
+    ],
+    "original_evidence_commitment": null,
+    "original_request_commitment": null,
+    "production_authorized": false,
+    "schema_version": "cog-verification-decision-v1",
+    "status": "VERIFICATION_DEPENDENCY_UNAVAILABLE",
+    "task_completion_authorized": false,
+    "trusted_verification": false
+  }
+}
