@@ -1,0 +1,390 @@
+{
+  "schema": "cog-orchestration-vectors-v1",
+  "positive_outcome": {
+    "completion_reason": "TRUSTED_COMPLETION_UNAVAILABLE",
+    "evidence": {
+      "commitment": "d32ab55e9d5c1e64061bbfefe2d8bbdc7db503a4bc27ba7f4d8e5c4e5bfc6b92",
+      "decision": {
+        "binding_digest": "1d8fbcba369c3a8fb88a625becdadc4085b67b541de164d3e1a171c8d8ef2da2",
+        "production_authorized": false,
+        "progress_digest": "f2ca5b88dc1cda9d35d7fd9103b8e14f9cef05075b86d4fd957ba592440ab340",
+        "request_digest": "3434f99060081b6308c8f313559fdf48796770e8621cb60f3d996e257948aae7",
+        "schema_version": "cog-tool-decision-v1",
+        "status": "ISOLATED_BINDING_VALIDATED"
+      },
+      "production_authorized": false,
+      "result": {
+        "commitment": "c7a8ac0af88480458e51a7ab58daf524cf87b064947ee3b3bae4c6ae8971f5fa",
+        "input_byte_length": 3,
+        "production_authorized": false,
+        "request_digest": "3434f99060081b6308c8f313559fdf48796770e8621cb60f3d996e257948aae7",
+        "schema_version": "cog-tool-result-v1",
+        "sha256_hex": "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad",
+        "status": "TOOL_EXECUTED_ISOLATED"
+      },
+      "schema_version": "cog-tool-evidence-v1",
+      "status": "TOOL_EXECUTED_ISOLATED"
+    },
+    "persisted": false,
+    "production_authorized": false,
+    "progress": {
+      "consumed_estimate": {
+        "model_calls": 0,
+        "steps": 1,
+        "time_ms": 0,
+        "tokens": 0,
+        "tool_calls": 0
+      },
+      "outcome": "COMPLETED",
+      "plan_id": "c04374ce3017acf3d2647a381965372a8380b4a52766a983e8b5a64e274ff6ba",
+      "revision": 1,
+      "schema_version": "cog-plan-progress-v1",
+      "steps": [
+        {
+          "attempts": 1,
+          "dependencies": [],
+          "estimate": {
+            "model_calls": 0,
+            "steps": 1,
+            "time_ms": 0,
+            "tokens": 0,
+            "tool_calls": 0
+          },
+          "max_retries": 0,
+          "operation": "ANALYZE",
+          "schema_version": "cog-plan-step-v1",
+          "status": "COMPLETED",
+          "step_id": "00000000-0000-0000-0000-000000000002"
+        }
+      ]
+    },
+    "proposal": {
+      "evidence": {
+        "evidence_commitment": "d32ab55e9d5c1e64061bbfefe2d8bbdc7db503a4bc27ba7f4d8e5c4e5bfc6b92",
+        "input_commitment": "ef8842903d2ec8b0986227535de2314e180f557c94e7a02e29e9d87282a1a0d1",
+        "provenance_classification": "ISOLATED_COMPUTATION_UNTRUSTED_ORIGIN",
+        "request_commitment": "3434f99060081b6308c8f313559fdf48796770e8621cb60f3d996e257948aae7",
+        "result_commitment": "c7a8ac0af88480458e51a7ab58daf524cf87b064947ee3b3bae4c6ae8971f5fa",
+        "schema_version": "cog-knowledge-evidence-ref-v1",
+        "verification_decision_commitment": "e3978f8b99d1e58406fbf29cfb4a2170d0fbf1e06795985891ab64b8c9edf6d4"
+      },
+      "knowledge_category": "COMPUTED_FACT_ISOLATED",
+      "persisted": false,
+      "plan_id": "c04374ce3017acf3d2647a381965372a8380b4a52766a983e8b5a64e274ff6ba",
+      "plan_progress_revision": 0,
+      "production_authorized": false,
+      "proposal_revision": 1,
+      "proposed_content": {
+        "input_byte_length": 3,
+        "input_commitment": "ef8842903d2ec8b0986227535de2314e180f557c94e7a02e29e9d87282a1a0d1",
+        "relation": "SHA256_OF_UTF8_INPUT",
+        "schema_version": "cog-computed-hash-fact-v1",
+        "sha256_hex": "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad"
+      },
+      "provenance_classification": "ISOLATED_COMPUTATION_UNTRUSTED_ORIGIN",
+      "schema_version": "cog-knowledge-proposal-v1",
+      "step_id": "00000000-0000-0000-0000-000000000002",
+      "task_id": "00000000-0000-0000-0000-000000000001",
+      "tool_request_id": "00000000-0000-0000-0000-000000000003",
+      "trusted_knowledge": false
+    },
+    "reason": "COMPUTATION_AND_PROPOSAL_ONLY",
+    "schema_version": "cog-orchestration-outcome-v1",
+    "state": {
+      "events": [
+        {
+          "event_digest": "b2c4ff8e146b29bcace1d4f972c858da72ec1ae73c48465d983b2dcc82518ca4",
+          "new_revision": 1,
+          "new_status": "VALIDATED",
+          "new_task_digest": "418f4ce3e44c09b8027a004a9c6422e15d81274a40fd341b33e261619c09d0f2",
+          "previous_event_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+          "previous_revision": 0,
+          "previous_status": "CREATED",
+          "previous_task_digest": "78f79c6d74ea4d9c4e4057a4cef0ccd471bf352c43c77c8cddd94fe580ff12d6",
+          "schema_version": "cog-event-v1",
+          "task_id": "00000000-0000-0000-0000-000000000001",
+          "timestamp": "2026-10-15T00:00:00.000000Z",
+          "transition_type": "VALIDATE"
+        },
+        {
+          "event_digest": "e116058478dfa2d2154e9a854eb5b4a6d3b581002696e6c2fad3868cc3bc5a47",
+          "new_revision": 2,
+          "new_status": "PLANNED",
+          "new_task_digest": "9f4311c94d0d03790d02eb24faf1f8399a4578f67401d281ee7253f4b6a3f730",
+          "previous_event_digest": "b2c4ff8e146b29bcace1d4f972c858da72ec1ae73c48465d983b2dcc82518ca4",
+          "previous_revision": 1,
+          "previous_status": "VALIDATED",
+          "previous_task_digest": "418f4ce3e44c09b8027a004a9c6422e15d81274a40fd341b33e261619c09d0f2",
+          "schema_version": "cog-event-v1",
+          "task_id": "00000000-0000-0000-0000-000000000001",
+          "timestamp": "2026-10-15T00:00:00.000000Z",
+          "transition_type": "PLAN"
+        },
+        {
+          "event_digest": "953eafae8cc5ffda696ca658dc3a152a5234361745d18d4f6acf6101b3a53d19",
+          "new_revision": 3,
+          "new_status": "READY",
+          "new_task_digest": "47f3a3d7fef9d305bfe3e99b531d5973bb8b08454a88c1db96392f9afdd22bf5",
+          "previous_event_digest": "e116058478dfa2d2154e9a854eb5b4a6d3b581002696e6c2fad3868cc3bc5a47",
+          "previous_revision": 2,
+          "previous_status": "PLANNED",
+          "previous_task_digest": "9f4311c94d0d03790d02eb24faf1f8399a4578f67401d281ee7253f4b6a3f730",
+          "schema_version": "cog-event-v1",
+          "task_id": "00000000-0000-0000-0000-000000000001",
+          "timestamp": "2026-10-15T00:00:00.000000Z",
+          "transition_type": "READY"
+        },
+        {
+          "event_digest": "8385a92261107b7bfbede7957938e14758c00e6939e963f18e6e5e3b32c72152",
+          "new_revision": 4,
+          "new_status": "RUNNING",
+          "new_task_digest": "309d74acfd3790110f1acebe279fd4d7b8676ba387bec99a7f7fff99e3c82e41",
+          "previous_event_digest": "953eafae8cc5ffda696ca658dc3a152a5234361745d18d4f6acf6101b3a53d19",
+          "previous_revision": 3,
+          "previous_status": "READY",
+          "previous_task_digest": "47f3a3d7fef9d305bfe3e99b531d5973bb8b08454a88c1db96392f9afdd22bf5",
+          "schema_version": "cog-event-v1",
+          "task_id": "00000000-0000-0000-0000-000000000001",
+          "timestamp": "2026-10-15T00:00:00.000000Z",
+          "transition_type": "START"
+        },
+        {
+          "event_digest": "164ae537fda91fcace51f476c01b6b89208a723f4f56c335a893f7f29aa6c1c1",
+          "new_revision": 5,
+          "new_status": "RUNNING",
+          "new_task_digest": "9cd9e94fff3fce73c0c63905fadcfd6d5e57363bb08c7d709ef168da51ee02a6",
+          "previous_event_digest": "8385a92261107b7bfbede7957938e14758c00e6939e963f18e6e5e3b32c72152",
+          "previous_revision": 4,
+          "previous_status": "RUNNING",
+          "previous_task_digest": "309d74acfd3790110f1acebe279fd4d7b8676ba387bec99a7f7fff99e3c82e41",
+          "schema_version": "cog-event-v1",
+          "task_id": "00000000-0000-0000-0000-000000000001",
+          "timestamp": "2026-10-15T00:00:00.000000Z",
+          "transition_type": "CONSUME"
+        },
+        {
+          "event_digest": "c1de0ffae379a6bb503f664575ce1995d5ba61232f03922fe2e934aa79d2c0fd",
+          "new_revision": 6,
+          "new_status": "VERIFYING",
+          "new_task_digest": "ea72c6c4ac0b55c2d94529f6ebcbe4c1121db17cec682c14c26ea5c9a3701095",
+          "previous_event_digest": "164ae537fda91fcace51f476c01b6b89208a723f4f56c335a893f7f29aa6c1c1",
+          "previous_revision": 5,
+          "previous_status": "RUNNING",
+          "previous_task_digest": "9cd9e94fff3fce73c0c63905fadcfd6d5e57363bb08c7d709ef168da51ee02a6",
+          "schema_version": "cog-event-v1",
+          "task_id": "00000000-0000-0000-0000-000000000001",
+          "timestamp": "2026-10-15T00:00:00.000000Z",
+          "transition_type": "SUBMIT"
+        }
+      ],
+      "schema_version": "cog-state-v1",
+      "task": {
+        "budget": {
+          "consumed": {
+            "model_calls": 0,
+            "steps": 1,
+            "time_ms": 3,
+            "tokens": 2,
+            "tool_calls": 1
+          },
+          "maximum": {
+            "model_calls": 0,
+            "steps": 10,
+            "time_ms": 1000,
+            "tokens": 100,
+            "tool_calls": 10
+          },
+          "schema_version": "cog-budget-v1"
+        },
+        "created_at": "2026-10-15T00:00:00.000000Z",
+        "evidence_refs": [],
+        "failure_reason": null,
+        "objective": "hash demonstration",
+        "priority": 1,
+        "result": {
+          "content": "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad",
+          "content_hash": "dfe7a23fefeea519e9bbfdd1a6be94c4b2e4529dd6b7cbea83f9959c2621b13c",
+          "schema_version": "cog-result-v1",
+          "verification": "UNVERIFIED"
+        },
+        "revision": 6,
+        "schema_version": "cog-task-v1",
+        "status": "VERIFYING",
+        "steps": [
+          {
+            "description": "Isolated SHA256_TEXT_V1 computation",
+            "schema_version": "cog-step-v1",
+            "step_id": "00000000-0000-0000-0000-000000000002"
+          }
+        ],
+        "task_id": "00000000-0000-0000-0000-000000000001"
+      }
+    },
+    "status": "ISOLATED_CYCLE_SUCCEEDED",
+    "trace": {
+      "budget_after": {
+        "consumed": {
+          "model_calls": 0,
+          "steps": 1,
+          "time_ms": 3,
+          "tokens": 2,
+          "tool_calls": 1
+        },
+        "maximum": {
+          "model_calls": 0,
+          "steps": 10,
+          "time_ms": 1000,
+          "tokens": 100,
+          "tool_calls": 10
+        },
+        "schema_version": "cog-budget-v1"
+      },
+      "budget_before": {
+        "consumed": {
+          "model_calls": 0,
+          "steps": 0,
+          "time_ms": 0,
+          "tokens": 0,
+          "tool_calls": 0
+        },
+        "maximum": {
+          "model_calls": 0,
+          "steps": 10,
+          "time_ms": 1000,
+          "tokens": 100,
+          "tool_calls": 10
+        },
+        "schema_version": "cog-budget-v1"
+      },
+      "evidence_commitment": "d32ab55e9d5c1e64061bbfefe2d8bbdc7db503a4bc27ba7f4d8e5c4e5bfc6b92",
+      "execution_attempted": true,
+      "outcome": "ISOLATED_CYCLE_SUCCEEDED",
+      "plan_id": "c04374ce3017acf3d2647a381965372a8380b4a52766a983e8b5a64e274ff6ba",
+      "progress_revision_after": 1,
+      "progress_revision_before": 0,
+      "proposal_id": "c7bb2cb75bb6374dc90771231727b7b75f33063ef41d91bc52165a8b08d1021d",
+      "result_commitment": "c7a8ac0af88480458e51a7ab58daf524cf87b064947ee3b3bae4c6ae8971f5fa",
+      "schema_version": "cog-orchestration-trace-v1",
+      "step_id": "00000000-0000-0000-0000-000000000002",
+      "task_id": "00000000-0000-0000-0000-000000000001",
+      "task_revision_after": 6,
+      "task_revision_before": 1,
+      "timestamp": "2026-10-15T00:00:00.000000Z",
+      "tool_request_commitment": "3434f99060081b6308c8f313559fdf48796770e8621cb60f3d996e257948aae7",
+      "verification_decision_id": "e3978f8b99d1e58406fbf29cfb4a2170d0fbf1e06795985891ab64b8c9edf6d4"
+    },
+    "trusted_verification": false,
+    "verification": {
+      "findings": [
+        {
+          "code": "VERIFIED_CONSISTENCY",
+          "description": "Original input and isolated evidence are consistent; origin is untrusted.",
+          "schema_version": "cog-verification-finding-v1",
+          "severity": "INFO",
+          "stage": "COMPLETE"
+        }
+      ],
+      "original_evidence_commitment": "d32ab55e9d5c1e64061bbfefe2d8bbdc7db503a4bc27ba7f4d8e5c4e5bfc6b92",
+      "original_request_commitment": "3434f99060081b6308c8f313559fdf48796770e8621cb60f3d996e257948aae7",
+      "production_authorized": false,
+      "schema_version": "cog-verification-decision-v1",
+      "status": "EVIDENCE_VERIFIED_ISOLATED",
+      "task_completion_authorized": false,
+      "trusted_verification": false
+    }
+  },
+  "trace_id": "fca7f914d3063dc38b89b6f21d67471d19fdb295858b1fd5e92316d3fcee89eb",
+  "budget_exhaustion": {
+    "completion_reason": "TRUSTED_COMPLETION_UNAVAILABLE",
+    "evidence": null,
+    "persisted": false,
+    "production_authorized": false,
+    "progress": {
+      "consumed_estimate": {
+        "model_calls": 0,
+        "steps": 0,
+        "time_ms": 0,
+        "tokens": 0,
+        "tool_calls": 0
+      },
+      "outcome": "ACTIVE",
+      "plan_id": "7a636456e2c0743d93e899bcdd5a1988645a22efb6f2ae06c1919ed2eb28ff21",
+      "revision": 0,
+      "schema_version": "cog-plan-progress-v1",
+      "steps": [
+        {
+          "attempts": 0,
+          "dependencies": [],
+          "estimate": {
+            "model_calls": 0,
+            "steps": 1,
+            "time_ms": 0,
+            "tokens": 0,
+            "tool_calls": 0
+          },
+          "max_retries": 0,
+          "operation": "ANALYZE",
+          "schema_version": "cog-plan-step-v1",
+          "status": "PENDING",
+          "step_id": "00000000-0000-0000-0000-000000000002"
+        }
+      ]
+    },
+    "proposal": null,
+    "reason": "BUDGET_INSUFFICIENT",
+    "schema_version": "cog-orchestration-outcome-v1",
+    "state": {
+      "events": [
+        {
+          "event_digest": "f006111bd8d66b143e1fbbd733d10b23176d7fbf606ef303d0bf402751a5c7d3",
+          "new_revision": 1,
+          "new_status": "VALIDATED",
+          "new_task_digest": "d26011015cdcbe26f119f7ee5fc930c544a5fa07e7c54182771f39b223733229",
+          "previous_event_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+          "previous_revision": 0,
+          "previous_status": "CREATED",
+          "previous_task_digest": "a9888ab32d52fd476fcf7af8d0bb3d401751277a5055ff00165f5cd56f8293ec",
+          "schema_version": "cog-event-v1",
+          "task_id": "00000000-0000-0000-0000-000000000001",
+          "timestamp": "2026-10-15T00:00:00.000000Z",
+          "transition_type": "VALIDATE"
+        }
+      ],
+      "schema_version": "cog-state-v1",
+      "task": {
+        "budget": {
+          "consumed": {
+            "model_calls": 0,
+            "steps": 0,
+            "time_ms": 0,
+            "tokens": 0,
+            "tool_calls": 0
+          },
+          "maximum": {
+            "model_calls": 0,
+            "steps": 10,
+            "time_ms": 1000,
+            "tokens": 100,
+            "tool_calls": 0
+          },
+          "schema_version": "cog-budget-v1"
+        },
+        "created_at": "2026-10-15T00:00:00.000000Z",
+        "evidence_refs": [],
+        "failure_reason": null,
+        "objective": "hash demonstration",
+        "priority": 1,
+        "result": null,
+        "revision": 1,
+        "schema_version": "cog-task-v1",
+        "status": "VALIDATED",
+        "steps": [],
+        "task_id": "00000000-0000-0000-0000-000000000001"
+      }
+    },
+    "status": "CYCLE_BUDGET_EXHAUSTED",
+    "trace": null,
+    "trusted_verification": false,
+    "verification": null
+  }
+}
