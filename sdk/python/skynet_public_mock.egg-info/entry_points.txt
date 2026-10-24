@@ -1,0 +1,2 @@
+[console_scripts]
+skynet-public = skynet_public.cli:main

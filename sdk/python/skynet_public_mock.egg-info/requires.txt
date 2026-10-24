@@ -1,0 +1,4 @@
+pydantic<3,>=2.13
+
+[test]
+pytest<10,>=9

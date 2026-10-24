@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: skynet-public-mock
+Version: 0.2.0
+Summary: Offline deterministic SKYNET public developer SDK
+Requires-Python: >=3.11
+Requires-Dist: pydantic<3,>=2.13
+Provides-Extra: test
+Requires-Dist: pytest<10,>=9; extra == "test"
