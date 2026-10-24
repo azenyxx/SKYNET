@@ -1,75 +1,37 @@
 # SKYNET
 
-**Building and testing the architectural foundations of Artificial Superintelligence.**
+**Open research toward Artificial Superintelligence (ASI)**
 
-SKYNET is an independent experimental research initiative exploring modular cognitive architectures and the scientific questions involved in building increasingly capable, verifiable AI systems.
+SKYNET is an experimental research and engineering initiative exploring architectures that may contribute to future artificial superintelligence: reasoning, world models, memory, agent coordination, continual learning, self-evaluation, and recursive improvement. **SKYNET has not demonstrated AGI or ASI.**
 
-> **Research status:** SKYNET has **not** demonstrated Artificial General Intelligence (AGI), Artificial Superintelligence (ASI), or superiority over human baselines. This repository is an **architecture and research preview**, not a runnable AI system.
+## Research areas
 
-## Research directions
+| Area | Public reference implementation | Scope |
+|---|---|---|
+| Cognitive architecture | [`src/cognitive`](src/cognitive) | Public cognitive reference and reviewed runtime components |
+| Agent orchestration | [`src/agents`](src/agents) | Public agent modules and examples |
+| Learning and adaptation | [`src/learning`](src/learning) | Public learning reference modules |
+| Recursive self-improvement | [`src/self_improvement`](src/self_improvement) | Public RSI research modules |
+| Python SDK | [`sdk/python`](sdk/python) | Public SDK reference |
 
-- General reasoning and metacognitive control
-- Persistent knowledge, evidence, and world models
-- Continual learning and cross-domain transfer
-- Autonomous scientific discovery as a research objective
-- Adversarial self-verification and calibrated uncertainty
-- Governed tool execution, independent assessment, and measurable evaluation
+The internal research roadmap has progressed through **COG-001–020, AGT-001–010, LRN-001–008, and RSI-001–008**. These identifiers describe development stages, **not independent evidence of completed ASI capabilities or production-grade qualification**. The public repository intentionally contains a reviewed subset of the research, not the full private implementation.
 
-See [Research Hypothesis](RESEARCH_HYPOTHESIS.md) and [Architecture](ARCHITECTURE.md).
+## Getting started
 
-## What is available
+Browse each module's README and tests. Public components have different packaging and import layouts; this is a research monorepo, not yet one installable integrated application.
 
-This first public release includes **sanitized research documentation only**. It does not contain the private Cognitive Core, runnable application, model weights, executable API contracts, or deployment configuration. Selected code, safe examples, and reproducible tests may be released after separate review.
+## Research and safety
 
-| Area | Evidence status |
-|---|---|
-| Experimental private implementation | Exists outside this repository; not independently reproducible from this release |
-| Private local unit and contract tests | Historically reported; not public test results |
-| PostgreSQL G3 authority verification | **BLOCKED_ENVIRONMENT — NOT RUN** |
-| Real sandbox isolation and external provider qualification | **PENDING** |
-| AGI/ASI capability benchmarks | **NOT DEMONSTRATED** |
+See [Architecture](docs/architecture/OVERVIEW.md), [Roadmap](docs/roadmap/ROADMAP.md), and [Security](SECURITY.md). Do not deploy research examples as production autonomous systems without independent assessment.
 
-See [Limitations](LIMITATIONS.md), [Roadmap](ROADMAP.md), and [Release Manifest](RELEASE_MANIFEST.md).
+## Support SKYNET
 
-## Join the research initiative
+Contributions, peer review and research collaboration are welcome.
 
-We welcome AI researchers, backend and systems engineers, security reviewers, and open-source contributors. You can help improve public documentation, propose experiments, review architectural boundaries, and eventually contribute to independently reviewed public SDKs, fixtures, and tests.
+**Bitcoin (BTC, Bitcoin mainnet):** `bc1qrxegtdynmn2rnhnu24gqvljlsxn83h5jhhwkk9`
 
-Read [Contributing](CONTRIBUTING.md). Use GitHub Issues for nonsensitive suggestions and discussions. **Do not submit secrets or vulnerability details in public issues.**
-
-## Support independent research
-
-If you would like to support research, infrastructure, verification, and future public tooling, voluntary BTC contributions are welcome.
-
-**Bitcoin (BTC, mainnet):**
-
-```text
-bc1qrxegtdynmn2rnhnu24gqvljlsxn83h5jhhwkk9
-```
-
-Please verify the address with the project owner before sending. Donations do not confer equity, investment returns, governance authority, or guaranteed research outcomes.
-
-## Public and private boundaries
-
-This repository follows a **selective open-source** model. Published materials are distinct from private cognition, metacognitive control, proprietary learning, world-model adaptation, and sensitive experimental methods. A public description is not an implementation disclosure.
+Only send BTC on the Bitcoin network to this address. Donations support ongoing independent research; they do not imply investment or project ownership.
 
 ## License
 
-The repository owner selected the **MIT License** for this public repository. See the repository's root `LICENSE` file created on GitHub. This does **not** license private, unpublished components.
-
-## Security
-
-See [Security](SECURITY.md). Do not disclose sensitive findings publicly; a private reporting channel must be confirmed before accepting vulnerability reports.
-
-## Latest development update
-
-**PUBLIC-006 — October 12, 2026**
-
-Private engineering has progressed through SKYNET-001–005.
-SKYNET-006, covering scheduling, governed parallel execution,
-and evidence-backed recovery, remains under implementation.
-
-PostgreSQL runtime verification and independent qualification
-are still pending. No AGI/ASI capabilities are claimed.
-
-Read the [PUBLIC-006 Development Progress Update](docs/updates/PUBLIC-006.md).
+See [LICENSE](LICENSE). This candidate requires an explicit owner review of the license and provenance of each included public module before publication.
