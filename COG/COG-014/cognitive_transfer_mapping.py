@@ -1,0 +1,5 @@
+from cognitive_transfer_contracts import *
+from cognitive_transfer_abstraction import abstract
+def validate_mapping(source,target,m):
+ abstract(source);abstract(target);require(type(m) is ConceptMappingV1,'MAPPING_TYPE');m.__post_init__();require(source.namespace==target.namespace==m.namespace,'NAMESPACE');require(source.domain_id!=target.domain_id,'DOMAIN_SEPARATION');require(source.kind==target.kind,'KIND');require(m.source_commitment==source.commitment and m.target_commitment==target.commitment,'MAPPING_BINDING')
+ a={e.entity_id:e.role for e in source.entities};b={e.entity_id:e.role for e in target.entities};require(set(m.source_ids)==set(a) and set(m.target_ids)==set(b) and len(m.source_ids)==len(m.target_ids)==len(set(m.target_ids))==len(a),'BIJECTION');f=dict(zip(m.source_ids,m.target_ids));require(all(a[x]==b[y] for x,y in f.items()),'ROLE');require({(f[r.source],f[r.target],r.relation) for r in source.relations}=={(r.source,r.target,r.relation) for r in target.relations},'TOPOLOGY');require(set(source.constraints)==set(target.constraints),'CONSTRAINT_MISMATCH');return m

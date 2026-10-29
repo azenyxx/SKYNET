@@ -1,37 +1,43 @@
-# SKYNET
+# SKYNET v1.0
 
-**Open research toward Artificial Superintelligence (ASI)**
+**Open research and engineering toward Artificial Superintelligence (ASI).**
 
-SKYNET is an experimental research and engineering initiative exploring architectures that may contribute to future artificial superintelligence: reasoning, world models, memory, agent coordination, continual learning, self-evaluation, and recursive improvement. **SKYNET has not demonstrated AGI or ASI.**
+SKYNET v1.0 brings together a 64-stage research and development program covering cognitive architectures, agent execution, learning interfaces, recursive improvement workflows, distributed runtime infrastructure and systematic validation.
 
-## Research areas
+## Repository layout
 
-| Area | Public reference implementation | Scope |
-|---|---|---|
-| Cognitive architecture | [`src/cognitive`](src/cognitive) | Public cognitive reference and reviewed runtime components |
-| Agent orchestration | [`src/agents`](src/agents) | Public agent modules and examples |
-| Learning and adaptation | [`src/learning`](src/learning) | Public learning reference modules |
-| Recursive self-improvement | [`src/self_improvement`](src/self_improvement) | Public RSI research modules |
-| Python SDK | [`sdk/python`](sdk/python) | Public SDK reference |
+| Directory | Development program |
+| --- | --- |
+| `FOUNDATION/` | Cognitive Runtime V1 foundation |
+| `COG/` | COG-001–020: cognitive contracts and processing |
+| `AGT/` | AGT-001–010: agent systems |
+| `LRN/` | LRN-001–008: learning and adaptation |
+| `RSI/` | RSI-001–008: recursive improvement workflows |
+| `SYS/` | SYS-001–008: runtime infrastructure |
+| `VAL/` | VAL-001–010: capability validation |
 
-The internal research roadmap has progressed through **COG-001–020, AGT-001–010, LRN-001–008, and RSI-001–008**. These identifiers describe development stages, **not independent evidence of completed ASI capabilities or production-grade qualification**. The public repository intentionally contains a reviewed subset of the research, not the full private implementation.
+**Total: 64 numbered development stages.** Each technical section contains source code, tests and one README explaining its role. Historical stage snapshots and the audited runtime are distinguished by directory.
 
-## Getting started
+## Engineering status
 
-Browse each module's README and tests. Public components have different packaging and import layouts; this is a research monorepo, not yet one installable integrated application.
+The v1.0 audited runtime includes task coordination, controlled execution, versioned memory, authorization, evidence and qualification infrastructure. Research components include cognitive plan validation, agent execution contracts, learning evaluation and improvement assessment. Development continues toward deeper integration and native cognitive capabilities.
 
-## Research and safety
+## Working with the source
 
-See [Architecture](docs/architecture/OVERVIEW.md), [Roadmap](docs/roadmap/ROADMAP.md), and [Security](SECURITY.md). Do not deploy research examples as production autonomous systems without independent assessment.
+Python modules and tests are organized by research program. The audited runtime packages are under `SYS/runtime/src/` and `VAL/runtime/src/`; tests are under the corresponding `runtime/tests/` directories. See `pyproject.toml` for the original runtime tooling. Historical stage snapshots may have distinct import requirements and are not represented as a single installable Python package.
+
+## Roadmap
+
+See [ROADMAP.md](ROADMAP.md) for the ongoing research direction, and [SECURITY.md](SECURITY.md) for vulnerability reporting.
 
 ## Support SKYNET
 
-Contributions, peer review and research collaboration are welcome.
+Independent research and development can be supported with Bitcoin donations.
 
-**Bitcoin (BTC, Bitcoin mainnet):** `bc1qrxegtdynmn2rnhnu24gqvljlsxn83h5jhhwkk9`
+**BTC (Bitcoin mainnet):** `bc1qrxegtdynmn2rnhnu24gqvljlsxn83h5jhhwkk9`
 
-Only send BTC on the Bitcoin network to this address. Donations support ongoing independent research; they do not imply investment or project ownership.
+Send only BTC over the Bitcoin mainnet. Donations do not grant ownership or investment rights.
 
 ## License
 
-See [LICENSE](LICENSE). This candidate requires an explicit owner review of the license and provenance of each included public module before publication.
+See [LICENSE](LICENSE). Third-party and historically contributed code remains subject to its applicable provenance and licensing terms.
