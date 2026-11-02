@@ -1,16 +1,16 @@
-# SKYNET v2.0 — Public Status
+# SKYNET v2.0 — Research Status (Public)
 
-**Release type:** Minor documentation update (not a software release)
+Updated: 2026-11-02  
+Release: selective public minor update
 
-| Area | Public status |
+| Area | Status |
 | --- | --- |
-| ASI-directed research and development | Active |
-| Architecture and evaluation design | In progress |
-| Adaptive planning | Development objective |
-| Cross-task generalization | Development objective |
-| Metacognitive control | Development objective |
-| Independent capability verification | Required before verified claims |
-| Domain-specific superhuman verification | Mandatory program objective; not yet verified |
+| Adaptive planning | Implemented; internal synthetic evaluation |
+| Metacognitive monitoring | Implemented; limited internal diagnostics |
+| Experience and knowledge | Implemented; limited positive and negative results |
+| Distribution-shift robustness | Not demonstrated |
+| Governed knowledge revision | Planned / under development |
+| Independent superhuman qualification | Not evaluated |
 | General ASI | Not claimed |
 
-This page intentionally excludes internal milestones, implementation details, private benchmarks, and unpublished security findings. Status descriptions are not evidence of implemented capabilities.
+This public snapshot is not a software release or an independent audit.

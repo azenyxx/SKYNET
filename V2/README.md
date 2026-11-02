@@ -1,31 +1,23 @@
-# SKYNET v2.0 — Public Development Update
+# SKYNET v2.0 — Public Research Update
 
-**Status:** In development · **Focus:** ASI-directed cognitive systems research and engineering
+SKYNET is an **ASI-oriented research prototype**, not an ASI system. This selective public update summarizes recent engineering work without releasing the private cognitive core.
 
-SKYNET v2.0 is an active development program exploring and engineering cognitive capabilities relevant to the long-term goal of artificial superintelligence (ASI).
+## Research progress (internal development)
 
-## Public focus areas
+- Adaptive planning and metacognitive control have been implemented and tested on synthetic tasks.
+- Experience-guided planning showed a benefit on a deliberately learnable synthetic task family; it also exhibited negative transfer.
+- Under distribution shift, both tested experience-based policies underperformed a no-experience baseline.
+- A cost-sensitive policy reduced some losses under one reversal condition but did **not** solve distribution-shift robustness.
+- Controlled knowledge revision is a planned next step, **not a completed capability** in this update.
 
-- Adaptive planning in changing environments.
-- Generalization and reuse of knowledge across tasks.
-- Metacognitive monitoring and decision control.
-- Evidence-based, reproducible capability evaluation.
-- Security-conscious, bounded autonomous operation.
+## Evidence and limitations
 
-## Verification policy
+These are **internal development results**, not independently confirmed capability claims. The test environment is synthetic, and production-grade evaluator/participant isolation is not established. No general intelligence or superhuman performance is claimed.
 
-Capabilities are not considered demonstrated merely because they are designed or implemented. Claims require reproducible measurements and, where appropriate, independent evaluation.
+**Qualification:** `SUPERHUMAN_NOT_EVALUATED`.
 
-A domain-specific, independently verified superhuman result is a **program objective**, not an achieved capability or proof of general ASI.
+## Public code
 
-## Development status
+`examples/shift_demo.py` is a small, independently written educational illustration of negative transfer. It is **not** SKYNET's proprietary planner, learning implementation, evaluation harness, or benchmark. Run with `python3 V2/examples/shift_demo.py`.
 
-Architecture and evaluation planning are underway. Implementation milestones and experimental results will be disclosed selectively after review.
-
-## Disclosure boundary
-
-This public directory contains high-level project information only. Internal architecture, cognitive algorithms, evaluation datasets, security details, and private runtime code are not included.
-
-## Disclaimer
-
-SKYNET is **not** a completed ASI system. No general superintelligence or superhuman performance is claimed by this update.
+No private algorithms, model weights, task seeds, evaluation internals, keys, or infrastructure configuration are included.
