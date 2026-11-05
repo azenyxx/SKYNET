@@ -41,3 +41,15 @@ Send only BTC over the Bitcoin mainnet. Donations do not grant ownership or inve
 ## License
 
 See [LICENSE](LICENSE). Third-party and historically contributed code remains subject to its applicable provenance and licensing terms.
+
+<!-- SKYNET-V2-PUBLIC-START -->
+## SKYNET V2.0 — Public Engineering Release
+
+**Status:** `ENGINEERING_COMPLETE_WITH_LIMITATIONS` · **Final acceptance:** `FINAL_ACCEPTANCE_PENDING`
+
+SKYNET V2.0 integrates bounded cognitive planning, trusted execution, metacognitive monitoring, durable learning and memory, scoped rule application, and a controlled improvement lifecycle. The private engineering release reported **388/388 regression tests passed** across 12 groups and **12/12 targeted adversarial checks enforced**. These are engineering test results, not independent qualification.
+
+The real V2-015 improvement candidate was correctly rejected for added post-shift harm; **no improvement has been activated on real qualification data**. Statistical superiority has **not** been established and superhuman capability has **not** been evaluated. V1.1 parity and independent final acceptance remain pending.
+
+See [V2/README.md](V2/README.md), [V2/RELEASE_NOTES.md](V2/RELEASE_NOTES.md), and [V2/LIMITATIONS.md](V2/LIMITATIONS.md). This public directory contains documentation and a small checksum verifier, **not the private cognitive runtime**.
+<!-- SKYNET-V2-PUBLIC-END -->
