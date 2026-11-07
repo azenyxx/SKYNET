@@ -1,8 +1,8 @@
-# SKYNET v1.0
+# SKYNET — ASI-Oriented Engineering Program
 
-**Open research and engineering toward Artificial Superintelligence (ASI).**
+**Cyberdyne Systems · Cognitive systems, autonomous execution and verifiable evaluation**
 
-SKYNET v1.0 brings together a 64-stage research and development program covering cognitive architectures, agent execution, learning interfaces, recursive improvement workflows, distributed runtime infrastructure and systematic validation.
+SKYNET is an engineering program investigating components and foundations relevant to Artificial Superintelligence (ASI). The project combines cognitive architecture, planning, agent coordination, learning, bounded improvement, operational runtime and systematic validation. **SKYNET is not an achieved AGI or ASI system.**
 
 ## Repository layout
 
@@ -12,44 +12,72 @@ SKYNET v1.0 brings together a 64-stage research and development program covering
 | `COG/` | COG-001–020: cognitive contracts and processing |
 | `AGT/` | AGT-001–010: agent systems |
 | `LRN/` | LRN-001–008: learning and adaptation |
-| `RSI/` | RSI-001–008: recursive improvement workflows |
+| `RSI/` | RSI-001–008: bounded improvement workflows |
 | `SYS/` | SYS-001–008: runtime infrastructure |
 | `VAL/` | VAL-001–010: capability validation |
+| `V2/` | Selected V2 engineering source, tests and milestone documentation |
 
-**Total: 64 numbered development stages.** Each technical section contains source code, tests and one README explaining its role. Historical stage snapshots and the audited runtime are distinguished by directory.
+The original development program comprises **64 numbered stages**. Historical snapshots and audited runtime components are separate from the selected V2 public subset.
 
-## Engineering status
+## Engineering progress
 
-The v1.0 audited runtime includes task coordination, controlled execution, versioned memory, authorization, evidence and qualification infrastructure. Research components include cognitive plan validation, agent execution contracts, learning evaluation and improvement assessment. Development continues toward deeper integration and native cognitive capabilities.
+| Version | Milestone | Status |
+| --- | --- | --- |
+| V1.0 | 64-stage cognitive and runtime foundation | Completed engineering program |
+| V1.1 | Hardened operational runtime and native integration | Historical hardened baseline |
+| **V2.0** | **Unified operational + cognitive runtime** | **Functional baseline accepted, with qualification limitations** |
+| V3 | Autonomous Superintelligence Core | Architecture planning |
+
+### SKYNET V2.0 — final unified functional baseline
+
+V2 integrated V1.1's operational scheduler, workers, transport, memory, authorization and recovery with bounded V2 cognitive execution, planning, learning and knowledge integration, metacognitive controls, agent coordination and parallel processing.
+
+The final **V2-017R7** engineering baseline closed the documented delegation recovery and worker outcome-isolation defects. Its internal functional acceptance includes deterministic replay, fail-closed fault handling, agent supervision, provider isolation and a 22-scenario recovery matrix.
+
+| Internal verification | Result |
+| --- | ---: |
+| V1.1 regression | **1,179 / 1,179 PASS** |
+| Adversarial checks | **39 / 39 + 24 / 24 PASS** |
+| V2 regression | **388 / 388 PASS** |
+| Unified integration | **76 / 76 PASS** |
+| Recovery acceptance | **22 / 22 PASS** |
+
+These are **internal executor results**, not an external audit or independent intelligence qualification. The accepted baseline is a functional engineering milestone, not production certification. Known limitations include unanchored trailing-record rollback (R-1), evaluator co-location (R-2), TEST-only trust, unqualified external provider networking and V2 journal growth at SYS capacity (P2-1).
+
+**Private accepted release:** `SKYNET-V2-017R7-FINAL-UNIFIED-HARDENED-BASELINE.zip`  
+**SHA-256:** `57c6bc9be4a9c31fbec02a1840f62ed6454aab94f78ad6f92c0aa2cd0b83cdc2`
+
+**Explore:** [V2 engineering report and public code](V2/README.md) · [Full roadmap](ROADMAP.md) · [Security policy](SECURITY.md)
 
 ## Working with the source
 
-Python modules and tests are organized by research program. The audited runtime packages are under `SYS/runtime/src/` and `VAL/runtime/src/`; tests are under the corresponding `runtime/tests/` directories. See `pyproject.toml` for the original runtime tooling. Historical stage snapshots may have distinct import requirements and are not represented as a single installable Python package.
+Python modules and tests are organized by research program. Historical audited runtime packages are under `SYS/runtime/src/` and `VAL/runtime/src/`, with tests in their respective runtime test directories. See `pyproject.toml` for original runtime tooling. Historical stages may require distinct imports and are not one installable package.
 
-## Roadmap
+The `V2/` directory includes **selected executable modules and public tests**, not the full private SKYNET runtime. To run the public subset:
 
-See [ROADMAP.md](ROADMAP.md) for the ongoing research direction, and [SECURITY.md](SECURITY.md) for vulnerability reporting.
+```bash
+cd V2
+PYTHONPATH=src python3 -m unittest discover -s tests -v
+```
+
+## V3 — next architecture program
+
+The proposed **SKYNET V3 — Autonomous Superintelligence Core** will prioritize adaptive generalization across unseen tasks, continual learning with retention safeguards, robust autonomous planning, evidence-backed bounded self-improvement, isolated evaluation and stronger operational trust. The first V3 milestone is **architecture and measurable acceptance criteria**, not an unverified claim of superior intelligence.
+
+See [ROADMAP.md](ROADMAP.md) for stage gates, expected evidence and outstanding qualification requirements.
 
 ## Support SKYNET
 
-Independent research and development can be supported with Bitcoin donations.
+Support independent engineering, evaluation infrastructure and long-term research through voluntary Bitcoin contributions.
 
-**BTC (Bitcoin mainnet):** `bc1qrxegtdynmn2rnhnu24gqvljlsxn83h5jhhwkk9`
+**Bitcoin · Mainnet (BTC)**
 
-Send only BTC over the Bitcoin mainnet. Donations do not grant ownership or investment rights.
+### `bc1qrxegtdynmn2rnhnu24gqvljlsxn83h5jhhwkk9`
+
+**Network:** Bitcoin mainnet only · **Asset:** BTC
+
+> Send only native BTC over the Bitcoin mainnet. Always verify the complete address before sending. Contributions are voluntary and do not confer equity, ownership, governance or investment rights.
 
 ## License
 
-See [LICENSE](LICENSE). Third-party and historically contributed code remains subject to its applicable provenance and licensing terms.
-
-<!-- SKYNET-V2-PUBLIC-START -->
-## SKYNET V2.0 — Public Engineering Release
-
-**Status:** `ENGINEERING_COMPLETE_WITH_LIMITATIONS` · **Final acceptance:** `FINAL_ACCEPTANCE_PENDING`
-
-SKYNET V2.0 integrates bounded cognitive planning, trusted execution, metacognitive monitoring, durable learning and memory, scoped rule application, and a controlled improvement lifecycle. The private engineering release reported **388/388 regression tests passed** across 12 groups and **12/12 targeted adversarial checks enforced**. These are engineering test results, not independent qualification.
-
-The real V2-015 improvement candidate was correctly rejected for added post-shift harm; **no improvement has been activated on real qualification data**. Statistical superiority has **not** been established and superhuman capability has **not** been evaluated. V1.1 parity and independent final acceptance remain pending.
-
-See [V2/README.md](V2/README.md), [V2/RELEASE_NOTES.md](V2/RELEASE_NOTES.md), and [V2/LIMITATIONS.md](V2/LIMITATIONS.md). This public directory contains documentation and a small checksum verifier, **not the private cognitive runtime**.
-<!-- SKYNET-V2-PUBLIC-END -->
+See [LICENSE](LICENSE). Third-party and historically contributed code remains subject to applicable provenance and licensing terms.
