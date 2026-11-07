@@ -1,42 +1,49 @@
-# SKYNET V2.0 — Public Engineering Release
+# SKYNET V2 — Public Engineering Release
 
-**Cyberdyne Systems | SKYNET | ASI-oriented cognitive system**
+**Cyberdyne Systems · SKYNET V2.0 · Public code subset**
 
-**Status:** `ENGINEERING_COMPLETE_WITH_LIMITATIONS`  
-**Final acceptance:** `FINAL_ACCEPTANCE_PENDING` (V1.1 parity comparison and independent review)  
-**Superhuman performance:** `SUPERHUMAN_NOT_EVALUATED`  
-**Statistical superiority:** `NOT_ESTABLISHED`
+This directory replaces the previous public `V2/` contents. It documents the completed V2 functional integration milestone and publishes **real, selected source files from the accepted V2-017R7 release**, together with a standalone read-only archive verification utility and executable tests. This is not the full private runtime.
 
-This directory is a **curated public disclosure** of the SKYNET V2.0 engineering results. It is **not** the complete SKYNET runtime, a runnable cognitive system, or an independent certification. Internal source, private tests, detailed evidence, credentials, and privileged implementation are not included.
+## Engineering milestone
 
-## What was built
+SKYNET V2 integrated the V1.1 operational infrastructure (scheduler, workers, journaled state, recovery, authorization and transport) with V2 cognitive components (planning, knowledge, learning, metacognition, supervised agents and parallel execution). The integration program closed with V2-017R7, following fixes to delegation replay, deterministic failure handling, worker outcome isolation and recovery verification.
 
-The private V2.0 engineering release integrates bounded cognitive task processing and planning, trusted execution and outcome verification, metacognitive monitoring, durable experience and learning, scoped rule application, journal replay, and a constrained improvement proposal/validation/authorization mechanism. See [TECHNICAL_OVERVIEW.md](TECHNICAL_OVERVIEW.md) for architecture and capability boundaries.
+**Internal acceptance evidence, reported by the implementation executor:** V1.1 1,179/1,179; adversarial 39/39 + 24/24; V2 388/388; unified 76/76; recovery matrix A01–A22 22/22. These figures are *internal regression results*, not independent external certification. The private runtime and full test corpus are not distributed here.
 
-## Reported results
+Accepted private release reference: `SKYNET-V2-017R7-FINAL-UNIFIED-HARDENED-BASELINE.zip`  
+SHA-256: `57c6bc9be4a9c31fbec02a1840f62ed6454aab94f78ad6f92c0aa2cd0b83cdc2`
 
-- **388/388** tests passed in **12** groups in the V2-016 engineering regression (Python 3.12.3, Linux); results are reported by the project executor, not independently reproduced in this public package.
-- **12/12** targeted adversarial security checks were enforced or rejected in that regression.
-- **V2-015-R1:** a real evidence-derived improvement candidate was **rejected** because it added post-shift harm without reducing false abstentions. No safe candidate was activated on real data.
-- **V2-014:** the post-shift evaluation reported a utility decrease of approximately **0.083**, and shift detection did not suspend the rule within 25 tasks.
+## Published code
 
-## Public resources
+- `src/skynet_v2_eval/prng.py` — SHA-256 counter-mode deterministic pseudo-random generator for repeatable experiments. **Not suitable for secrets.**
+- `src/skynet_v2_eval/stats.py` — exact-arithmetic statistics, confidence intervals, deterministic bootstrap and evaluation summaries.
+- `src/skynet_v2_eval/scoring.py` — reference-based A+ evaluation scoring with integer arithmetic.
+- `src/skynet_v2_eval/errors.py` — structured evaluation errors.
+- `src/skynet_v2_trust/ids.py` — ULID-format and deterministic identifiers.
+- `src/skynet_v2_trust/errors.py` — fail-closed structured error taxonomy.
+- `tools/verify_release.py` — independent, read-only archive verifier (new public utility; not copied from private runtime).
+- `tests/test_public.py` — standalone smoke and negative tests for this published subset.
 
-- [TECHNICAL_OVERVIEW.md](TECHNICAL_OVERVIEW.md) — architecture, capabilities and security boundary
-- [RELEASE_NOTES.md](RELEASE_NOTES.md) — results, limitations and roadmap
-- `examples/canonical_metrics.py` — standalone public reference example of integer-only metric encoding and digesting; **not** production SKYNET code
-- `tests/test_canonical_metrics.py` — executable tests of the public example
-- `tools/verify_public_manifest.py` — package integrity verifier
+The six Python source modules under `src/` are byte-for-byte selected from the accepted V2-017R7 archive. No proprietary planner, learning policy, metacognitive controller, agent execution runtime, internal trust keys or complete production orchestration is published.
 
-## Try the public example
+## Run locally
+
+Python 3.13 recommended; the public tests use only the standard library.
 
 ```bash
-python3 -m unittest discover -s V2/tests -v
-python3 V2/tools/verify_public_manifest.py
+cd V2
+PYTHONPATH=src python -m unittest discover -s tests -v
+python tools/verify_release.py /path/to/release.zip --sha256 EXPECTED_SHA256
 ```
 
-These tests validate **only the public example**. They do not reproduce the private V2 regression or prove cognitive performance.
+The verifier checks the archive digest, CRC, normalized paths, duplicate entries, symlinks and the `MANIFEST.sha256` inventory. It does not extract or execute the archive. The CLI expects a single `MANIFEST.sha256` whose entries cover every other file, relative to the manifest directory.
 
-## Provenance and disclosure
+## Trust and capability boundary
 
-The private source release is `SKYNET-V2-016-FINAL-CONSOLIDATED-HARDENED-RELEASE.zip` (SHA-256 `e4989cf8489841eedfa5922cf2ebd069e1e21a70dfca0bcd637c32b618327ac0`). This public release is curated, not the runnable cognitive runtime. It excludes private algorithms, trust implementation, private evidence and internal test fixtures. No ASI, AGI, independent superiority or V1.1 parity is claimed.
+This is an **ASI-oriented engineering prototype**, not an achieved AGI or ASI system. No independent superhuman performance claim is made. The accepted V2 baseline is a **functional engineering baseline**, not a production security certification. Known limitations include unanchored trailing journal truncation (R-1), evaluator/participant process and Unix-user co-location (R-2), TEST-only trust qualification, unqualified external provider connectivity, and unbounded V2 journal growth following rejected SYS commands at capacity (P2-1).
+
+V3 architecture work will address stronger independent evaluation, more robust operational trust boundaries, adaptive generalization, continual learning and evidence-backed autonomous improvement. Public artifacts remain intentionally scoped to avoid disclosing private cognitive core implementations.
+
+## Repository scope
+
+Only the contents of this `V2/` directory are intended for replacement. Do not delete or rewrite other repository directories. This public subset is illustrative and is not a standalone deployment of the full SKYNET unified runtime.
