@@ -51,27 +51,29 @@ These are internal executor results, not third-party qualification. The full pri
 
 ## V3 — Autonomous Superintelligence Core | Architecture planning
 
-**Goal:** design and subsequently evaluate components capable of measurable improvement in adaptive reasoning, learning and autonomous problem solving. The program name is aspirational; capabilities must be demonstrated experimentally.
+**Mission:** build and independently evaluate operational intelligence that can solve unfamiliar problems, learn persistently, generalize across domains, and improve its own problem-solving methods under bounded authority. This is a future capability target, not an achieved ASI claim.
 
-| Workstream | Proposed objective | Required evidence before claiming success |
-| --- | --- | --- |
-| V3-ARCH | Freeze contracts, threat model, dependencies and acceptance gates | Owner-approved architecture and independent challenge review |
-| Adaptive generalization | Transfer to unseen tasks and unexpected perturbations | Held-out evaluations versus strong preregistered baselines |
-| Continual learning | Long-term adaptation without destructive forgetting | Retention, transfer and regression measurements |
-| Autonomous planning | Robust multi-step replanning under constraints | Reproducible task-success and recovery comparisons |
-| Verified improvement | Bounded proposal/test/rollback of self-modifications | Independent before/after evidence; safety and regression gates |
-| Cognitive evaluation | Reduce leakage and evaluator interference | Isolated evaluation and external expert review |
-| Trust hardening | Address R-1, R-2, provider and resource boundaries | Explicit production-security qualification, separately awarded |
+| Stage | Objective | Evidence required | Status |
+| --- | --- | --- | --- |
+| **V3-ARCH-001** | Architecture, contracts, V2 integration, threat model and evaluation protocol | Independent challenge and owner approval | In design |
+| **V3-001 — Intelligence Engine** | Autonomous reasoning, discovery and verification | Hidden-task baselines and ablation studies | Planned |
+| **V3-002 — Autonomous Learning** | Persistent validated learning | Retention, transfer, forgetting and regression tests | Planned |
+| **V3-003 — Novel Problem Solving** | End-to-end solutions to unfamiliar tasks | Reproducible held-out task success | Planned |
+| **V3-004 — Recursive Improvement** | Bounded proposal/test/rollback of method changes | Independent gains without safety regressions | Planned |
+| **V3-005 — Superhuman Competition** | Competitive domain-level evaluation | Frontier AI, specialist algorithms and expert comparisons with fair budgets | Planned |
+| **V3-006 — Independent Qualification** | External reproducibility and capability review | Isolated evaluator, leakage controls and independent replication | Planned |
 
-### Proposed V3 stage gates
+### Evidence targets
 
-1. **Architecture baseline:** requirements, interfaces, algorithms and qualification standards defined.
-2. **Architecture Challenge Gate:** adversarial design review; resolve critical findings before implementation.
-3. **Owner approval:** freeze V3 architecture and authorize bounded implementation tasks.
-4. **Engineering qualification:** repeatable functional and security tests, explicit failure cases and provenance.
-5. **Capability qualification:** independent benchmarks and external review. `SUPERHUMAN_VERIFIED` is a target only; it is not awarded by passing integration tests.
+- **Level I — Verified Cognitive Capability:** unseen-task solving, learning and retention.
+- **Level II — Verified Superhuman Domain Capability:** sustained independently verified advantage in a defined complex domain.
+- **Level III — Broad Superintelligence Evidence:** sustained advantages across distinct domains, transfer and verified improvement; not a universal ASI certificate.
 
-**Current authorization:** V3 architecture planning. No V3 implementation, production readiness or ASI capability is claimed complete.
+**V3 objective:** earn Level II and initial Level III evidence. No levels are currently awarded. Security and operational qualifications remain separate from intelligence qualification.
+
+**Current authorization:** architecture design only. Implementation begins only after independent Architecture Challenge Gate and owner approval.
+
+**Read:** [V3 mission](V3/README.md) · [Detailed capability roadmap](V3/CAPABILITY_ROADMAP.md)
 
 ## Publication policy
 
