@@ -1,0 +1,3 @@
+task Contradiction1.
+variable x has domain [0, 1] unit count scale 0.
+constraint C1: 1*x >= 2 count@0.

@@ -1,0 +1,3 @@
+task Unknown1.
+variable x has domain [0, 5] unit count scale 0.
+make x as small as possible.

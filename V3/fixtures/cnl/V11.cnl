@@ -1,0 +1,3 @@
+task MissingSlot.
+variable x has domain [0, 5] unit count scale 0.
+constraint C1: 1*x <= .

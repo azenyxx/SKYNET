@@ -1,0 +1,5 @@
+task Resource1.
+variable a has domain [0, 10] unit min scale 0.
+variable b has domain [0, 10] unit min scale 0.
+constraint N1: no overlap (a/2 min@0, b/3 min@0).
+constraint U1: cumulative capacity 2 worker@0 tasks (a/2 min@0/1 worker@0, b/3 min@0/1 worker@0).

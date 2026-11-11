@@ -1,0 +1,2 @@
+task MissingUnit.
+variable x has domain [0, 5] scale 0.
