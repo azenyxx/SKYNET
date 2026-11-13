@@ -16,7 +16,7 @@ SKYNET is an engineering program investigating components and foundations releva
 | `SYS/` | SYS-001–008: runtime infrastructure |
 | `VAL/` | VAL-001–010: capability validation |
 | `V2/` | Selected V2 engineering source, tests and milestone documentation |
-| `V3/` | V3 vision, six capability targets and public development roadmap |
+| `V3/` | V3 engineering progress, public-safe source subset, and bounded experimental evidence |
 
 The original development program comprises **64 numbered stages**. Historical snapshots and audited runtime components are separate from the selected V2 public subset.
 
@@ -61,15 +61,11 @@ cd V2
 PYTHONPATH=src python3 -m unittest discover -s tests -v
 ```
 
-## V3 — Autonomous Superintelligence Core
+## V3 — next architecture program
 
-**Cyberdyne Systems** is designing SKYNET V3 toward an executable, continuously learning cognitive system: one that can understand unfamiliar problems, discover and verify solutions, retain validated learning, transfer methods across domains, and safely test improvements to its own problem-solving methods.
+The proposed **SKYNET V3 — Autonomous Superintelligence Core** will prioritize adaptive generalization across unseen tasks, continual learning with retention safeguards, robust autonomous planning, evidence-backed bounded self-improvement, isolated evaluation and stronger operational trust. The first V3 milestone is **architecture and measurable acceptance criteria**, not an unverified claim of superior intelligence.
 
-The six planned capabilities are **autonomous problem understanding, novel solution discovery, superhuman problem solving, continuous learning, cross-domain generalization, and verified recursive improvement**. The intended loop is **Understand → Discover → Solve → Verify → Learn → Improve → Re-evaluate**.
-
-The roadmap progresses through **V3-ARCH-001**, then **V3-001 Intelligence Engine**, **V3-002 Autonomous Learning**, **V3-003 Novel Problem Solving**, **V3-004 Recursive Improvement**, **V3-005 Superhuman Competition**, and **V3-006 Independent Qualification**. The ambition is to earn independently verified Level II superhuman domain capability and initial Level III cross-domain evidence. **Neither level, nor AGI/ASI, has been achieved or certified.**
-
-**Explore:** [V3 vision](V3/README.md) · [V3 capability roadmap](V3/CAPABILITY_ROADMAP.md) · [Full roadmap](ROADMAP.md)
+See [ROADMAP.md](ROADMAP.md) for stage gates, expected evidence and outstanding qualification requirements.
 
 ## Support SKYNET
 
@@ -86,3 +82,12 @@ Support independent engineering, evaluation infrastructure and long-term researc
 ## License
 
 See [LICENSE](LICENSE). Third-party and historically contributed code remains subject to applicable provenance and licensing terms.
+
+
+## SKYNET V3 — Cognitive Integration Update (13 November 2026)
+
+V3-003 integrates strategy selection, real task execution, counterexample refinement, typed composition, abstraction discovery and verified feedback in a bounded development loop. A previously learned candidate was retrieved and executed on held-out variants H1, H2 and H5. Across nine frozen variants, the integrated cognitive path matched both the built-in SKYNET and NAIVE baselines in terminal state and T1 result; **no performance advantage was demonstrated**. The M6 abstraction instances tested were behaviorally identical to existing methods. The latest reviewed internal candidate remained **PARTIAL (15 PASS / 1 FAIL)** due to a stale held-out fixture-count assertion.
+
+The earlier V3-003 pilot observed strategy choice changing after failed execution, P1 recovery 3/3, and candidate-search caching reducing searches from 3 to 1 on one fixture. An earlier held-out T1 comparison scored 3/3 for all three paths, but none exercised learned-method replanning; it was not a demonstration of cognitive superiority.
+
+See [V3/README.md](V3/README.md) for detailed boundaries, results, and public code. **This is not a claim of AGI, ASI, superhuman capability, independent qualification or production readiness.**
