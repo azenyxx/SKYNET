@@ -1,1 +1,1 @@
-"""Selected public, non-cognitive SKYNET V3 infrastructure utilities."""
+"""SKYNET V3 public verification primitives (limited audited subset)."""
