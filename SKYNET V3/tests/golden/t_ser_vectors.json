@@ -1,0 +1,193 @@
+{
+ "canonical": [
+  {
+   "digest": "sha256:92528f47b41c1f2d6305fcab4eed94375c69111f386d2d755e3ecee3f9cc27b4",
+   "expected": "{\"A\":2,\"a\":0,\"b\":1,\"é\":3}",
+   "name": "key_order_codepoint",
+   "obj": {
+    "A": 2,
+    "a": 0,
+    "b": 1,
+    "é": 3
+   }
+  },
+  {
+   "digest": "sha256:645e02c87282695b524e9d54e0e72d5341ae2d28cbc34f1682e12375024c0a51",
+   "expected": "{\"big\":9007199254740993,\"max\":1000000000,\"min\":-1000000000,\"neg\":-1,\"zero\":0}",
+   "name": "integers",
+   "obj": {
+    "big": 9007199254740993,
+    "max": 1000000000,
+    "min": -1000000000,
+    "neg": -1,
+    "zero": 0
+   }
+  },
+  {
+   "digest": "sha256:4b3545fa42eaace702b96bc062387559e1c6eccdf1f3350298d10e9fdd6dbbc1",
+   "expected": "{\"y\":{\"a\":{},\"b\":[]},\"z\":[3,1,2]}",
+   "name": "nested_order",
+   "obj": {
+    "y": {
+     "a": {},
+     "b": []
+    },
+    "z": [
+     3,
+     1,
+     2
+    ]
+   }
+  },
+  {
+   "digest": "sha256:a0bac73a7719a9e5f7f9ff6376af12e8b5cb4b79129cc96bd08ec2f11e0c1ba3",
+   "expected": "{\"s\":\"Ångström\"}",
+   "name": "nfc_string",
+   "obj": {
+    "s": "Ångström"
+   }
+  },
+  {
+   "digest": "sha256:22e00dc2f7b01420f940fbdbfbdf34fa0667cc6500186495023ba37722cbd05e",
+   "expected": "{\"f\":false,\"n\":null,\"t\":true}",
+   "name": "null_bool",
+   "obj": {
+    "f": false,
+    "n": null,
+    "t": true
+   }
+  }
+ ],
+ "ingest_accept": [
+  {
+   "ir_digest": "sha256:dc722f7a28f62bf7d4fd92d51bf4c693063074ffbac423a19442eab82b4f8a9a",
+   "name": "int_bounds_min_max",
+   "raw": "{\"constraints\":[{\"args\":{\"op\":\"ge\",\"rhs\":{\"scale\":0,\"unit\":\"u\",\"value\":-1000000000},\"terms\":[{\"coef\":1,\"var\":\"x\"}]},\"cid\":\"c\",\"hard\":true,\"kind\":\"linear\"}],\"skyspec_version\":\"1.0\",\"task_id\":\"tser\",\"variables\":[{\"domain\":{\"lb\":-1000000000,\"ub\":1000000000},\"id\":\"x\",\"scale\":0,\"unit\":\"u\"}]}",
+   "spec_digest": "sha256:3729ff137c38357179f8df6144ef47c05a31f481ba3a96d9b90c4b28a1a4485e"
+  },
+  {
+   "ir_digest": "sha256:7979c40957aeb91c701ad7b43298770bcf4d06df4401e6aa3915e645ed24cf67",
+   "name": "zero_and_negative",
+   "raw": "{\"constraints\":[{\"args\":{\"op\":\"le\",\"rhs\":{\"scale\":0,\"unit\":\"u\",\"value\":0},\"terms\":[{\"coef\":1,\"var\":\"x\"}]},\"cid\":\"c\",\"hard\":true,\"kind\":\"linear\"}],\"skyspec_version\":\"1.0\",\"task_id\":\"tser\",\"variables\":[{\"domain\":{\"lb\":-5,\"ub\":0},\"id\":\"x\",\"scale\":0,\"unit\":\"u\"}]}",
+   "spec_digest": "sha256:4763a285c29bd216260f8a85b1e2b3d58ce24d168064b18594c91ac8d567980a"
+  },
+  {
+   "ir_digest": "sha256:e98f2bf4c76334d3e83470ac77dbb73e643be144604668f33328253a5a7082a6",
+   "name": "singleton_interval",
+   "raw": "{\"constraints\":[],\"skyspec_version\":\"1.0\",\"task_id\":\"tser\",\"variables\":[{\"domain\":{\"lb\":5,\"ub\":5},\"id\":\"x\",\"scale\":0,\"unit\":\"u\"}]}",
+   "spec_digest": "sha256:daca2d5b25787425654869d44ceae6e09b9ebe65db58b03c5001ff3d25541581"
+  },
+  {
+   "ir_digest": "sha256:e6d9da02bc20635f650997765f60b06863bc59807f1e96bdd3aece46ef1d471c",
+   "name": "singleton_set",
+   "raw": "{\"constraints\":[],\"skyspec_version\":\"1.0\",\"task_id\":\"tser\",\"variables\":[{\"domain\":{\"values\":[7]},\"id\":\"x\",\"scale\":0,\"unit\":\"u\"}]}",
+   "spec_digest": "sha256:548f702de3c295b2b4959b7cb9f61051f6923b0cfadf4cd962a1eb5abfd949e5"
+  },
+  {
+   "ir_digest": "sha256:d6c8e2b225ed3ec1873e80b6426b5a24afde3849a52c4eb1a223376741a7d0a7",
+   "name": "scale_0_and_9",
+   "raw": "{\"constraints\":[{\"args\":{\"op\":\"le\",\"rhs\":{\"scale\":9,\"unit\":\"u\",\"value\":9},\"terms\":[{\"coef\":1,\"var\":\"y\"}]},\"cid\":\"c\",\"hard\":true,\"kind\":\"linear\"}],\"skyspec_version\":\"1.0\",\"task_id\":\"tser\",\"variables\":[{\"domain\":{\"lb\":0,\"ub\":9},\"id\":\"x\",\"scale\":0,\"unit\":\"u\"},{\"domain\":{\"lb\":0,\"ub\":9},\"id\":\"y\",\"scale\":9,\"unit\":\"u\"}]}",
+   "spec_digest": "sha256:b1003eb3c7d59e9c759fe86bf255c8f22473e14dd18fb9ad75103775b0c31226"
+  },
+  {
+   "ir_digest": "sha256:809a3f0a59b1b679e2b0445a2d6cfc6628dde3621bca1699aa5935e370c37023",
+   "name": "upscale_0_to_9",
+   "raw": "{\"constraints\":[{\"args\":{\"op\":\"le\",\"rhs\":{\"scale\":0,\"unit\":\"u\",\"value\":1},\"terms\":[{\"coef\":1,\"var\":\"y\"}]},\"cid\":\"c\",\"hard\":true,\"kind\":\"linear\"}],\"skyspec_version\":\"1.0\",\"task_id\":\"tser\",\"unit_policy\":{\"constant_rescale\":\"exact_upscale\"},\"variables\":[{\"domain\":{\"lb\":0,\"ub\":1000000000},\"id\":\"y\",\"scale\":9,\"unit\":\"u\"}]}",
+   "spec_digest": "sha256:59c43e716cb57ef3f0c17132b03b1d7ffa1f983bd546ce705d0cdc9b61a792bb"
+  },
+  {
+   "ir_digest": "sha256:ce3a1f0b3845babb33de10d0b88be92c932673a26274e4546f8e98cee2fb54a0",
+   "name": "constraint_order_a",
+   "raw": "{\"constraints\":[{\"args\":{\"op\":\"le\",\"rhs\":{\"scale\":0,\"unit\":\"u\",\"value\":8},\"terms\":[{\"coef\":1,\"var\":\"x\"}]},\"cid\":\"c2\",\"hard\":true,\"kind\":\"linear\"},{\"args\":{\"op\":\"ge\",\"rhs\":{\"scale\":0,\"unit\":\"u\",\"value\":1},\"terms\":[{\"coef\":1,\"var\":\"x\"}]},\"cid\":\"c1\",\"hard\":true,\"kind\":\"linear\"}],\"skyspec_version\":\"1.0\",\"task_id\":\"tser\",\"variables\":[{\"domain\":{\"lb\":0,\"ub\":9},\"id\":\"x\",\"scale\":0,\"unit\":\"u\"}]}",
+   "spec_digest": "sha256:8efb76820380921634960aa432eebaec0aa555580a4ffc3f9d9beb4c11f0dd20"
+  },
+  {
+   "ir_digest": "sha256:49afd5717d90a888d74e4635ddad9dd1dd95f86dfb8e9655f78dfb9f6b2b875f",
+   "name": "constraint_order_b",
+   "raw": "{\"constraints\":[{\"args\":{\"op\":\"ge\",\"rhs\":{\"scale\":0,\"unit\":\"u\",\"value\":1},\"terms\":[{\"coef\":1,\"var\":\"x\"}]},\"cid\":\"c1\",\"hard\":true,\"kind\":\"linear\"},{\"args\":{\"op\":\"le\",\"rhs\":{\"scale\":0,\"unit\":\"u\",\"value\":8},\"terms\":[{\"coef\":1,\"var\":\"x\"}]},\"cid\":\"c2\",\"hard\":true,\"kind\":\"linear\"}],\"skyspec_version\":\"1.0\",\"task_id\":\"tser\",\"variables\":[{\"domain\":{\"lb\":0,\"ub\":9},\"id\":\"x\",\"scale\":0,\"unit\":\"u\"}]}",
+   "spec_digest": "sha256:f75dbaec5df8e2c874e4b839cb4b90f89894fdd11ba7da0410abe0d91002b728"
+  }
+ ],
+ "ingest_reject": [
+  {
+   "code": "VALUE_OUT_OF_RANGE",
+   "name": "value_above_max",
+   "raw": "{\"constraints\":[{\"args\":{\"op\":\"le\",\"rhs\":{\"scale\":0,\"unit\":\"u\",\"value\":3},\"terms\":[{\"coef\":1,\"var\":\"x\"}]},\"cid\":\"c\",\"hard\":true,\"kind\":\"linear\"}],\"skyspec_version\":\"1.0\",\"task_id\":\"tser\",\"variables\":[{\"domain\":{\"lb\":0,\"ub\":1000000001},\"id\":\"x\",\"scale\":0,\"unit\":\"u\"}]}"
+  },
+  {
+   "code": "VALUE_OUT_OF_RANGE",
+   "name": "value_below_min",
+   "raw": "{\"constraints\":[{\"args\":{\"op\":\"le\",\"rhs\":{\"scale\":0,\"unit\":\"u\",\"value\":3},\"terms\":[{\"coef\":1,\"var\":\"x\"}]},\"cid\":\"c\",\"hard\":true,\"kind\":\"linear\"}],\"skyspec_version\":\"1.0\",\"task_id\":\"tser\",\"variables\":[{\"domain\":{\"lb\":-1000000001,\"ub\":9},\"id\":\"x\",\"scale\":0,\"unit\":\"u\"}]}"
+  },
+  {
+   "code": "INVALID_SCALE",
+   "name": "scale_10",
+   "raw": "{\"constraints\":[{\"args\":{\"op\":\"le\",\"rhs\":{\"scale\":10,\"unit\":\"u\",\"value\":3},\"terms\":[{\"coef\":1,\"var\":\"x\"}]},\"cid\":\"c\",\"hard\":true,\"kind\":\"linear\"}],\"skyspec_version\":\"1.0\",\"task_id\":\"tser\",\"variables\":[{\"domain\":{\"lb\":0,\"ub\":9},\"id\":\"x\",\"scale\":0,\"unit\":\"u\"}]}"
+  },
+  {
+   "code": "NON_INTEGER_NUMBER",
+   "name": "float_dot",
+   "raw": "{\"constraints\":[{\"args\":{\"op\":\"le\",\"rhs\":{\"scale\":0,\"unit\":\"u\",\"value\":3.0},\"terms\":[{\"coef\":1,\"var\":\"x\"}]},\"cid\":\"c\",\"hard\":true,\"kind\":\"linear\"}],\"skyspec_version\":\"1.0\",\"task_id\":\"tser\",\"variables\":[{\"domain\":{\"lb\":0,\"ub\":9},\"id\":\"x\",\"scale\":0,\"unit\":\"u\"}]}"
+  },
+  {
+   "code": "NON_INTEGER_NUMBER",
+   "name": "float_exp",
+   "raw": "{\"constraints\":[{\"args\":{\"op\":\"le\",\"rhs\":{\"scale\":0,\"unit\":\"u\",\"value\":3e0},\"terms\":[{\"coef\":1,\"var\":\"x\"}]},\"cid\":\"c\",\"hard\":true,\"kind\":\"linear\"}],\"skyspec_version\":\"1.0\",\"task_id\":\"tser\",\"variables\":[{\"domain\":{\"lb\":0,\"ub\":9},\"id\":\"x\",\"scale\":0,\"unit\":\"u\"}]}"
+  },
+  {
+   "code": "NONCANONICAL_INPUT",
+   "name": "negative_zero",
+   "raw": "{\"constraints\":[{\"args\":{\"op\":\"le\",\"rhs\":{\"scale\":0,\"unit\":\"u\",\"value\":-0},\"terms\":[{\"coef\":1,\"var\":\"x\"}]},\"cid\":\"c\",\"hard\":true,\"kind\":\"linear\"}],\"skyspec_version\":\"1.0\",\"task_id\":\"tser\",\"variables\":[{\"domain\":{\"lb\":0,\"ub\":9},\"id\":\"x\",\"scale\":0,\"unit\":\"u\"}]}"
+  },
+  {
+   "code": "MALFORMED_JSON",
+   "name": "leading_zero",
+   "raw": "{\"constraints\":[{\"args\":{\"op\":\"le\",\"rhs\":{\"scale\":0,\"unit\":\"u\",\"value\":03},\"terms\":[{\"coef\":1,\"var\":\"x\"}]},\"cid\":\"c\",\"hard\":true,\"kind\":\"linear\"}],\"skyspec_version\":\"1.0\",\"task_id\":\"tser\",\"variables\":[{\"domain\":{\"lb\":0,\"ub\":9},\"id\":\"x\",\"scale\":0,\"unit\":\"u\"}]}"
+  },
+  {
+   "code": "NON_FINITE_NUMBER",
+   "name": "nan",
+   "raw": "{\"constraints\":[{\"args\":{\"op\":\"le\",\"rhs\":{\"scale\":0,\"unit\":\"u\",\"value\":NaN},\"terms\":[{\"coef\":1,\"var\":\"x\"}]},\"cid\":\"c\",\"hard\":true,\"kind\":\"linear\"}],\"skyspec_version\":\"1.0\",\"task_id\":\"tser\",\"variables\":[{\"domain\":{\"lb\":0,\"ub\":9},\"id\":\"x\",\"scale\":0,\"unit\":\"u\"}]}"
+  },
+  {
+   "code": "NON_FINITE_NUMBER",
+   "name": "infinity",
+   "raw": "{\"constraints\":[{\"args\":{\"op\":\"le\",\"rhs\":{\"scale\":0,\"unit\":\"u\",\"value\":Infinity},\"terms\":[{\"coef\":1,\"var\":\"x\"}]},\"cid\":\"c\",\"hard\":true,\"kind\":\"linear\"}],\"skyspec_version\":\"1.0\",\"task_id\":\"tser\",\"variables\":[{\"domain\":{\"lb\":0,\"ub\":9},\"id\":\"x\",\"scale\":0,\"unit\":\"u\"}]}"
+  },
+  {
+   "code": "DUPLICATE_KEY",
+   "name": "duplicate_key",
+   "raw": "{\"constraints\":[{\"args\":{\"op\":\"le\",\"rhs\":{\"scale\":0,\"unit\":\"u\",\"value\":3},\"terms\":[{\"coef\":1,\"var\":\"x\"}]},\"cid\":\"c\",\"hard\":true,\"kind\":\"linear\"}],\"skyspec_version\":\"1.0\",\"task_id\":\"tser\",\"task_id\":\"tser\",\"variables\":[{\"domain\":{\"lb\":0,\"ub\":9},\"id\":\"x\",\"scale\":0,\"unit\":\"u\"}]}"
+  },
+  {
+   "code": "UNSUPPORTED_SPEC_VERSION",
+   "name": "schema_version",
+   "raw": "{\"constraints\":[{\"args\":{\"op\":\"le\",\"rhs\":{\"scale\":0,\"unit\":\"u\",\"value\":3},\"terms\":[{\"coef\":1,\"var\":\"x\"}]},\"cid\":\"c\",\"hard\":true,\"kind\":\"linear\"}],\"skyspec_version\":\"1.1\",\"task_id\":\"tser\",\"variables\":[{\"domain\":{\"lb\":0,\"ub\":9},\"id\":\"x\",\"scale\":0,\"unit\":\"u\"}]}"
+  },
+  {
+   "code": "ARRAY_TOO_SHORT",
+   "name": "empty_set_domain",
+   "raw": "{\"constraints\":[{\"args\":{\"op\":\"le\",\"rhs\":{\"scale\":0,\"unit\":\"u\",\"value\":3},\"terms\":[{\"coef\":1,\"var\":\"x\"}]},\"cid\":\"c\",\"hard\":true,\"kind\":\"linear\"}],\"skyspec_version\":\"1.0\",\"task_id\":\"tser\",\"variables\":[{\"domain\":{\"values\":[]},\"id\":\"x\",\"scale\":0,\"unit\":\"u\"}]}"
+  },
+  {
+   "code": "NONCANONICAL_INPUT",
+   "name": "whitespace",
+   "raw": "{\"constraints\":[{\"args\":{\"op\":\"le\",\"rhs\":{\"scale\":0,\"unit\":\"u\",\"value\":3},\"terms\":[{\"coef\":1,\"var\":\"x\"}]},\"cid\":\"c\",\"hard\":true,\"kind\":\"linear\"}], \"skyspec_version\":\"1.0\",\"task_id\":\"tser\",\"variables\":[{\"domain\":{\"lb\":0,\"ub\":9},\"id\":\"x\",\"scale\":0,\"unit\":\"u\"}]}"
+  },
+  {
+   "code": "NONCANONICAL_VALUE",
+   "name": "non_nfc_escape",
+   "raw": "{\"constraints\":[{\"args\":{\"op\":\"le\",\"rhs\":{\"scale\":0,\"unit\":\"u\",\"value\":3},\"terms\":[{\"coef\":1,\"var\":\"x\"}]},\"cid\":\"c\",\"hard\":true,\"kind\":\"linear\"}],\"skyspec_version\":\"1.0\",\"task_id\":\"A\\u030a\",\"variables\":[{\"domain\":{\"lb\":0,\"ub\":9},\"id\":\"x\",\"scale\":0,\"unit\":\"u\"}]}"
+  },
+  {
+   "code": "NESTING_TOO_DEEP",
+   "name": "nesting_33",
+   "raw": "{\"a\":[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]}"
+  },
+  {
+   "code": "INTEGER_EXPECTED",
+   "name": "bool_as_int",
+   "raw": "{\"constraints\":[{\"args\":{\"op\":\"le\",\"rhs\":{\"scale\":0,\"unit\":\"u\",\"value\":3},\"terms\":[{\"coef\":1,\"var\":\"x\"}]},\"cid\":\"c\",\"hard\":true,\"kind\":\"linear\"}],\"skyspec_version\":\"1.0\",\"task_id\":\"tser\",\"variables\":[{\"domain\":{\"lb\":0,\"ub\":true},\"id\":\"x\",\"scale\":0,\"unit\":\"u\"}]}"
+  }
+ ]
+}

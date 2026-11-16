@@ -1,0 +1,5 @@
+task Schedule1.
+variable a has domain [0, 20] unit min scale 0.
+variable b has domain [0, 20] unit min scale 0.
+constraint P1: b starts after a by at least 3 min@0.
+objective minimize 1*b.

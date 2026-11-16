@@ -1,0 +1,42 @@
+{
+  "release": "V3-003 FINAL CONSOLIDATED",
+  "status": "PARTIAL",
+  "source_archive_sha256": "cc10c3bea39427d976f505152580f49f89b00746d08a3b49c2dcadddcbebabfc",
+  "focused_tests_reported": {
+    "pass": 15,
+    "fail": 1,
+    "error": 0
+  },
+  "held_out": {
+    "count": 9,
+    "learned_candidate_used": [
+      "H1",
+      "H2",
+      "H5"
+    ],
+    "baseline_terminal_outcome": "equal across all 9",
+    "performance_advantage_demonstrated": false,
+    "m6_discovery_executed": true,
+    "m6_behaviorally_novel": false,
+    "t1_pass_not_equivalent_to_goal_completion": true
+  },
+  "pilot": {
+    "p1_recovery": "3/3",
+    "cached_candidate_searches": {
+      "without_cache": 3,
+      "with_cache": 1
+    },
+    "earlier_heldout_t1_pass": {
+      "cognitive": 3,
+      "built_in": 3,
+      "naive": 3,
+      "learned_replan_exercised": 0
+    }
+  },
+  "limits": [
+    "held-out variants from two base specifications",
+    "no independent qualification",
+    "no cross-family generalization evidence",
+    "H5 terminal label UNVERIFIED_CANDIDATE; do not infer verified goal from T1 alone"
+  ]
+}

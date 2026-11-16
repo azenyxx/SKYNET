@@ -1,0 +1,160 @@
+{
+ "fixtures": {
+  "F1_linear_feasibility": {
+   "analysis_classification": "VALID_REQUIRES_SOLVER",
+   "evidence_sha256": "f53768664b0376bffae7c26b202b953be7f8b102c065411c78b2c357a2a42d2d",
+   "expected_feasibility_class": "FEASIBLE",
+   "expected_invariants": [
+    "6 linear constraints (eq/ge/le)",
+    "explicit set domain for d",
+    "no objective"
+   ],
+   "expected_objective": null,
+   "expected_objective_method": "n/a",
+   "ir_digest": "sha256:b1a518d600ea8c80f1cc6054a610231df8136dbf940d316d23d4db0b92d63d52",
+   "observed_objective": null,
+   "reference_evaluator_accepts_witness": true,
+   "spec_digest": "sha256:3b23db42e359ef28cb34b930abd62724012cbc5bcf9eb01f9c3752854c317eb9",
+   "state": "UNVERIFIED_CANDIDATE",
+   "t1_outcome": "T1_PASS",
+   "witness_digest": "sha256:b1a09cb9eeed5ed7436e3bd0997aa452a2da040127b16e6c97e75590335da077"
+  },
+  "F2_linear_optimization": {
+   "analysis_classification": "VALID_REQUIRES_SOLVER",
+   "evidence_sha256": "7bd5718871558cd28b270aa2da16d2706bb4cfbf0b2cf002afa00fcef30af2ea",
+   "expected_feasibility_class": "FEASIBLE",
+   "expected_invariants": [
+    "3 capacity rows + mix ratio",
+    "maximize profit; optimum by exhaustive enumeration"
+   ],
+   "expected_objective": 111,
+   "expected_objective_method": "exhaustive",
+   "ir_digest": "sha256:86b7a14cab4ac26efa86f712f728b3d7d5d041e1d182c42d9037e9ad0fc0c686",
+   "observed_objective": 111,
+   "reference_evaluator_accepts_witness": true,
+   "spec_digest": "sha256:9e4a187066ca80e9cbd7cd7936d5106856af381ccde54f71939a29de225b7fa7",
+   "state": "UNVERIFIED_CANDIDATE",
+   "t1_outcome": "T1_PASS",
+   "witness_digest": "sha256:d8f637f704108ae98a5e3b85666ac7b5b573bbc5c48d48ba4d2f0b1a1c4c2c5f"
+  },
+  "F3_precedence_scheduling": {
+   "analysis_classification": "VALID_REQUIRES_SOLVER",
+   "evidence_sha256": "4b86ec7cc96a07e21126eae5e11a638cdce7dcb28d9bfe69daca01926ded5667",
+   "expected_feasibility_class": "FEASIBLE",
+   "expected_invariants": [
+    "7 precedences + makespan link",
+    "release time s_B>=4",
+    "optimum = longest path"
+   ],
+   "expected_objective": 11,
+   "expected_objective_method": "longest_path",
+   "ir_digest": "sha256:a1ebca2207d05d4c80e14d9b01f9af1fea29de525f1e0111d7c4e3114e247d4a",
+   "observed_objective": 11,
+   "reference_evaluator_accepts_witness": true,
+   "spec_digest": "sha256:19604a6f4706221856a2eb2e3183628d9c5173bc790c6ce12a15265063fccc0a",
+   "state": "UNVERIFIED_CANDIDATE",
+   "t1_outcome": "T1_PASS",
+   "witness_digest": "sha256:68c86819ba87be9abc09d76f3bf638d5a62940078ebe19c512ef73ecf89333ed"
+  },
+  "F4_cumulative_resource": {
+   "analysis_classification": "VALID_REQUIRES_SOLVER",
+   "evidence_sha256": "92fc4857135077ad002b952f9c08dcce3fdaf322b5763ed5eaabbae3a1de223a",
+   "expected_feasibility_class": "FEASIBLE",
+   "expected_invariants": [
+    "capacity 3 crew, 5 tasks",
+    "makespan link",
+    "optimum by exhaustive enumeration"
+   ],
+   "expected_objective": 7,
+   "expected_objective_method": "exhaustive",
+   "ir_digest": "sha256:9af6f8b79855a61ac6eaadfb5998219ec21389375d3b69328c01b13dd807e559",
+   "observed_objective": 7,
+   "reference_evaluator_accepts_witness": true,
+   "spec_digest": "sha256:319d9a9ab1d62ba98817ef9433a82da67d68ab8e8b0f14c85b7c7060cf49b4fc",
+   "state": "UNVERIFIED_CANDIDATE",
+   "t1_outcome": "T1_PASS",
+   "witness_digest": "sha256:1fb13bdd560c5cdba18f364f51ea6db25e3fb9f5fba0d8153698f41e185773aa"
+  },
+  "F5_combined_planning": {
+   "analysis_classification": "VALID_REQUIRES_SOLVER",
+   "evidence_sha256": "a2f76bc494613b7c5c40c18e39e0207531149c7a49e0b38ba055235161f7c9da",
+   "expected_feasibility_class": "FEASIBLE",
+   "expected_invariants": [
+    "cumulative + 2 precedences + 2 linear + makespan",
+    "weighted objective; exhaustive"
+   ],
+   "expected_objective": 27,
+   "expected_objective_method": "exhaustive",
+   "ir_digest": "sha256:1ac8e474683f70594acb52626c37aba7282a78e54f7bcb9f0b29b3c4121caf27",
+   "observed_objective": 27,
+   "reference_evaluator_accepts_witness": true,
+   "spec_digest": "sha256:8d56535ebbc6898a12696fc29c20f819fc47a1e1c20095164989a1e1a284614a",
+   "state": "UNVERIFIED_CANDIDATE",
+   "t1_outcome": "T1_PASS",
+   "witness_digest": "sha256:ba6ba761aeb30f61e56f2dc504ed2e3d01344d3a707a65afc7f134917dfb17d4"
+  },
+  "F6_assignment_alldiff_element": {
+   "analysis_classification": "VALID_REQUIRES_SOLVER",
+   "evidence_sha256": "258142d5f360d54db12c1d983529a8555e552f0fb5fd6586d9840d3a12190874",
+   "expected_feasibility_class": "FEASIBLE",
+   "expected_invariants": [
+    "alldiff over 4 index vars",
+    "4 element cost lookups (eur, scale 2)",
+    "budget rhs 60 eur scale 0 -> exact upscale x100",
+    "optimum by permutation enumeration"
+   ],
+   "expected_objective": 3750,
+   "expected_objective_method": "exhaustive",
+   "ir_digest": "sha256:72a83a05c1060c1fad7aef5b512d8369a71354e3084d12f02ac7ace008064f1f",
+   "observed_objective": 3750,
+   "reference_evaluator_accepts_witness": true,
+   "spec_digest": "sha256:75591cf8789300c4d14ffbc40c6eed413855e704e19e85927626fa81c4a93d18",
+   "state": "UNVERIFIED_CANDIDATE",
+   "t1_outcome": "T1_PASS",
+   "witness_digest": "sha256:f03dd579e1f02cd2fd3bb8b949a89289748982a90111a395294090f72493cc4a"
+  },
+  "F7_table_reified_config": {
+   "analysis_classification": "VALID_REQUIRES_SOLVER",
+   "evidence_sha256": "32a0d9e60d928b14b8b0a389c7b7f3404f49ebda4835fc46e4f2da49f3f425fb",
+   "expected_feasibility_class": "FEASIBLE",
+   "expected_invariants": [
+    "table catalog (m,p,w)",
+    "turbo <-> p>=6 (equiv)",
+    "element price",
+    "mixed-unit objective"
+   ],
+   "expected_objective": 305,
+   "expected_objective_method": "exhaustive",
+   "ir_digest": "sha256:33c16602892313d46d8b3fed9482f1974dfdb5efd5450fffe31db174af771e2c",
+   "observed_objective": 305,
+   "reference_evaluator_accepts_witness": true,
+   "spec_digest": "sha256:dc522e9df5b5a190f640796db32d3dff03481db8d5423bfc494ec81993c2ca6c",
+   "state": "UNVERIFIED_CANDIDATE",
+   "t1_outcome": "T1_PASS",
+   "witness_digest": "sha256:023bcc6085772429134f8455dbead9b2c673d4beba71896168f8ea6c94677956"
+  },
+  "F8_no_overlap_unit_policy": {
+   "analysis_classification": "VALID_REQUIRES_SOLVER",
+   "evidence_sha256": "52020c78668cd80f14df9c55f68d31244a0f72ddda381d827243c13dc30b9606",
+   "expected_feasibility_class": "FEASIBLE",
+   "expected_invariants": [
+    "no_overlap single machine",
+    "durations/lags at scale 0 upscaled to scale 1",
+    "release via set domain",
+    "optimum by exhaustive enumeration"
+   ],
+   "expected_objective": 50,
+   "expected_objective_method": "exhaustive",
+   "ir_digest": "sha256:8645af312aa277397cab37f098726f97f6342660cc4226e9004919000413767b",
+   "observed_objective": 50,
+   "reference_evaluator_accepts_witness": true,
+   "spec_digest": "sha256:37672751f01f019413a04ca7335f998b87f09f7c06bb95f3a97cd03713f0ffda",
+   "state": "UNVERIFIED_CANDIDATE",
+   "t1_outcome": "T1_PASS",
+   "witness_digest": "sha256:4ca202385a751ee17a8ebd7650ebbd09890919c8f8bfaee12e0c308f2fed89dc"
+  }
+ },
+ "ortools_version": "9.12.4544",
+ "platform": "Linux-6.18.44-fc-v310-x86_64-with-glibc2.39",
+ "python": "3.12.3"
+}

@@ -1,37 +1,93 @@
-# SKYNET
+# SKYNET — ASI-Oriented Engineering Program
 
-**Open research toward Artificial Superintelligence (ASI)**
+**Cyberdyne Systems · Cognitive systems, autonomous execution and verifiable evaluation**
 
-SKYNET is an experimental research and engineering initiative exploring architectures that may contribute to future artificial superintelligence: reasoning, world models, memory, agent coordination, continual learning, self-evaluation, and recursive improvement. **SKYNET has not demonstrated AGI or ASI.**
+SKYNET is an engineering program investigating components and foundations relevant to Artificial Superintelligence (ASI). The project combines cognitive architecture, planning, agent coordination, learning, bounded improvement, operational runtime and systematic validation. **SKYNET is not an achieved AGI or ASI system.**
 
-## Research areas
+## Repository layout
 
-| Area | Public reference implementation | Scope |
-|---|---|---|
-| Cognitive architecture | [`src/cognitive`](src/cognitive) | Public cognitive reference and reviewed runtime components |
-| Agent orchestration | [`src/agents`](src/agents) | Public agent modules and examples |
-| Learning and adaptation | [`src/learning`](src/learning) | Public learning reference modules |
-| Recursive self-improvement | [`src/self_improvement`](src/self_improvement) | Public RSI research modules |
-| Python SDK | [`sdk/python`](sdk/python) | Public SDK reference |
+| Directory | Development program |
+| --- | --- |
+| `FOUNDATION/` | Cognitive Runtime V1 foundation |
+| `COG/` | COG-001–020: cognitive contracts and processing |
+| `AGT/` | AGT-001–010: agent systems |
+| `LRN/` | LRN-001–008: learning and adaptation |
+| `RSI/` | RSI-001–008: bounded improvement workflows |
+| `SYS/` | SYS-001–008: runtime infrastructure |
+| `VAL/` | VAL-001–010: capability validation |
+| `V2/` | Selected V2 engineering source, tests and milestone documentation |
+| `V3/` | V3 engineering progress, public-safe source subset, and bounded experimental evidence |
 
-The internal research roadmap has progressed through **COG-001–020, AGT-001–010, LRN-001–008, and RSI-001–008**. These identifiers describe development stages, **not independent evidence of completed ASI capabilities or production-grade qualification**. The public repository intentionally contains a reviewed subset of the research, not the full private implementation.
+The original development program comprises **64 numbered stages**. Historical snapshots and audited runtime components are separate from the selected V2 public subset.
 
-## Getting started
+## Engineering progress
 
-Browse each module's README and tests. Public components have different packaging and import layouts; this is a research monorepo, not yet one installable integrated application.
+| Version | Milestone | Status |
+| --- | --- | --- |
+| V1.0 | 64-stage cognitive and runtime foundation | Completed engineering program |
+| V1.1 | Hardened operational runtime and native integration | Historical hardened baseline |
+| **V2.0** | **Unified operational + cognitive runtime** | **Functional baseline accepted, with qualification limitations** |
+| V3 | Autonomous Superintelligence Core | Architecture planning |
 
-## Research and safety
+### SKYNET V2.0 — final unified functional baseline
 
-See [Architecture](docs/architecture/OVERVIEW.md), [Roadmap](docs/roadmap/ROADMAP.md), and [Security](SECURITY.md). Do not deploy research examples as production autonomous systems without independent assessment.
+V2 integrated V1.1's operational scheduler, workers, transport, memory, authorization and recovery with bounded V2 cognitive execution, planning, learning and knowledge integration, metacognitive controls, agent coordination and parallel processing.
+
+The final **V2-017R7** engineering baseline closed the documented delegation recovery and worker outcome-isolation defects. Its internal functional acceptance includes deterministic replay, fail-closed fault handling, agent supervision, provider isolation and a 22-scenario recovery matrix.
+
+| Internal verification | Result |
+| --- | ---: |
+| V1.1 regression | **1,179 / 1,179 PASS** |
+| Adversarial checks | **39 / 39 + 24 / 24 PASS** |
+| V2 regression | **388 / 388 PASS** |
+| Unified integration | **76 / 76 PASS** |
+| Recovery acceptance | **22 / 22 PASS** |
+
+These are **internal executor results**, not an external audit or independent intelligence qualification. The accepted baseline is a functional engineering milestone, not production certification. Known limitations include unanchored trailing-record rollback (R-1), evaluator co-location (R-2), TEST-only trust, unqualified external provider networking and V2 journal growth at SYS capacity (P2-1).
+
+**Private accepted release:** `SKYNET-V2-017R7-FINAL-UNIFIED-HARDENED-BASELINE.zip`  
+**SHA-256:** `57c6bc9be4a9c31fbec02a1840f62ed6454aab94f78ad6f92c0aa2cd0b83cdc2`
+
+**Explore:** [V2 engineering report and public code](V2/README.md) · [Full roadmap](ROADMAP.md) · [Security policy](SECURITY.md)
+
+## Working with the source
+
+Python modules and tests are organized by research program. Historical audited runtime packages are under `SYS/runtime/src/` and `VAL/runtime/src/`, with tests in their respective runtime test directories. See `pyproject.toml` for original runtime tooling. Historical stages may require distinct imports and are not one installable package.
+
+The `V2/` directory includes **selected executable modules and public tests**, not the full private SKYNET runtime. To run the public subset:
+
+```bash
+cd V2
+PYTHONPATH=src python3 -m unittest discover -s tests -v
+```
+
+## V3 — next architecture program
+
+The proposed **SKYNET V3 — Autonomous Superintelligence Core** will prioritize adaptive generalization across unseen tasks, continual learning with retention safeguards, robust autonomous planning, evidence-backed bounded self-improvement, isolated evaluation and stronger operational trust. The first V3 milestone is **architecture and measurable acceptance criteria**, not an unverified claim of superior intelligence.
+
+See [ROADMAP.md](ROADMAP.md) for stage gates, expected evidence and outstanding qualification requirements.
 
 ## Support SKYNET
 
-Contributions, peer review and research collaboration are welcome.
+Support independent engineering, evaluation infrastructure and long-term research through voluntary Bitcoin contributions.
 
-**Bitcoin (BTC, Bitcoin mainnet):** `bc1qrxegtdynmn2rnhnu24gqvljlsxn83h5jhhwkk9`
+**Bitcoin · Mainnet (BTC)**
 
-Only send BTC on the Bitcoin network to this address. Donations support ongoing independent research; they do not imply investment or project ownership.
+### `bc1qrxegtdynmn2rnhnu24gqvljlsxn83h5jhhwkk9`
+
+**Network:** Bitcoin mainnet only · **Asset:** BTC
+
+> Send only native BTC over the Bitcoin mainnet. Always verify the complete address before sending. Contributions are voluntary and do not confer equity, ownership, governance or investment rights.
 
 ## License
 
-See [LICENSE](LICENSE). This candidate requires an explicit owner review of the license and provenance of each included public module before publication.
+See [LICENSE](LICENSE). Third-party and historically contributed code remains subject to applicable provenance and licensing terms.
+
+
+## SKYNET V3 — Cognitive Integration Update (13 November 2026)
+
+V3-003 integrates strategy selection, real task execution, counterexample refinement, typed composition, abstraction discovery and verified feedback in a bounded development loop. A previously learned candidate was retrieved and executed on held-out variants H1, H2 and H5. Across nine frozen variants, the integrated cognitive path matched both the built-in SKYNET and NAIVE baselines in terminal state and T1 result; **no performance advantage was demonstrated**. The M6 abstraction instances tested were behaviorally identical to existing methods. The latest reviewed internal candidate remained **PARTIAL (15 PASS / 1 FAIL)** due to a stale held-out fixture-count assertion.
+
+The earlier V3-003 pilot observed strategy choice changing after failed execution, P1 recovery 3/3, and candidate-search caching reducing searches from 3 to 1 on one fixture. An earlier held-out T1 comparison scored 3/3 for all three paths; subsequent experiments advanced to actual learned-method execution on H1, H2 and H5. We are actively strengthening the integrated cognitive loop and developing rigorous, reproducible evaluations to test whether it can outperform strong planning baselines.
+
+See [V3/README.md](V3/README.md) for technical results, evaluation details, and the public code subset. **Our long-term mission is the full engineering realization of Artificial Superintelligence (ASI).**

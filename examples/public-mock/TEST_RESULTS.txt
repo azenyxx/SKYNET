@@ -1,4 +1,0 @@
-Command: python -m pytest tests -q
-Exit code: 0
-.........................                                                [100%]
-25 passed in 0.07s

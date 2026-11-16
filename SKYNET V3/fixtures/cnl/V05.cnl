@@ -1,0 +1,6 @@
+task Config1.
+variable idx has domain [0, 2] unit index scale 0.
+variable out has domain [0, 9] unit count scale 0.
+variable flag has domain {0, 1} unit bool scale 0.
+constraint E1: out equals element idx of [3, 5, 7] unit count scale 0.
+constraint R1: flag if and only if (1*out >= 5 count@0).

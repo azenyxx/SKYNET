@@ -1,0 +1,10 @@
+test_duplicate_key (test_public_canonical.PublicCanonicalTests.test_duplicate_key) ... ok
+test_reject_float (test_public_canonical.PublicCanonicalTests.test_reject_float) ... ok
+test_reject_non_integer (test_public_canonical.PublicCanonicalTests.test_reject_non_integer) ... ok
+test_reject_tuple (test_public_canonical.PublicCanonicalTests.test_reject_tuple) ... ok
+test_sorted_integer_json (test_public_canonical.PublicCanonicalTests.test_sorted_integer_json) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.001s
+
+OK

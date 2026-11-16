@@ -1,31 +1,35 @@
-# SKYNET V3 — Public Foundation Update 001
+# SKYNET V3 — Public Verification Utilities
 
-A deliberately limited public code sample from the SKYNET V3 research prototype by Cyberdyne Systems.
+This directory contains a limited public subset of engineering utilities and **eight standalone tests**. It does not contain the SKYNET cognitive engine or private evaluation harness.
 
-## Included
+## Contents
 
-- `skynet_v3/canonical.py`: deterministic JSON encoding, SHA-256 digests, strict JSON parsing and nesting checks.
-- `skynet_v3/errors.py`: structured error types.
-- `skynet_v3/units.py`: exact integer scale semantics and rejection of unsupported conversions.
-- `tests/test_public_v3.py`: 15 deterministic standard-library unit tests.
+- `public_core/canonical.py`: deterministic JSON encoding, hashing and strict input parsing.
+- `public_core/errors.py`: structured validation errors.
+- `public_core/units.py`: integer quantity matching and exact, bounded scaling.
+- `tests/test_public_core.py`: reproducible public unit tests.
 
-These three implementation modules are selected from the cumulative V3 engineering baseline. The public tests are newly authored for this subset. This release intentionally omits cognitive algorithms, learning and self-improvement internals, evaluation-private fixtures, operational security modules, keys, configuration and infrastructure.
-
-## Run tests
-
-Requires Python 3.10+; no third-party packages.
-
-From the repository root:
+Run from the repository root:
 
 ```bash
-cd V3
-python3 -m unittest discover -s tests -p 'test_*.py' -v
+python3 -m unittest discover -s V3/tests -p 'test_*.py' -v
 ```
 
-## Scope and evidence
+## What these tests establish
 
-This update demonstrates selected foundational utilities, **not** AGI, ASI, autonomous self-improvement, independent security qualification or production readiness. Passing these tests validates only the included public subset; it does not replace the private V3 regression or security gates.
+The public tests exercise the **published utilities only**. They do not reproduce the private cognitive-loop, adaptation, transfer, security-infrastructure or benchmark evaluations. Internal source code, schemas, operational parameters, credentials and unpublished evidence are not included.
 
-Source provenance: selected from `SKYNET-V3-SECURITY-CORRECTIVE-002A.zip`, SHA-256 `16777eb41ffd6ef8d57319234b9e09bb452235d3e5a4b95470b6b07215694029`. No private repository contents are included.
+This is a selective engineering disclosure, not an independently verified ASI claim. Licensing remains governed by the repository's applicable license, if any.
 
-Copyright and license: no new license grant is provided by this folder; repository licensing governs reuse where applicable.
+## Public Update 001
+
+Additional public V3 utilities:
+
+- skynet_v3/canonical.py — deterministic JSON serialization.
+- skynet_v3/errors.py — validation errors.
+- skynet_v3/units.py — integer quantity operations.
+- tests/test_public_v3.py — 15 unit tests.
+
+Run from the V3 directory:
+
+    python3 -m unittest discover -s tests -p "test_*.py" -v

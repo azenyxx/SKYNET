@@ -1,0 +1,5 @@
+task Assign1.
+variable a has domain {0, 1, 2} unit count scale 0.
+variable b has domain {0, 1, 2} unit count scale 0.
+constraint A1: all different (a, b).
+constraint T1: allowed tuples (a, b) are {(0, 1), (1, 2)}.
