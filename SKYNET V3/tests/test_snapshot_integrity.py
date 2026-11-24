@@ -2,7 +2,7 @@
 import hashlib
 import json
 import unittest
-from V3.examples.snapshot_integrity import make_artifact, verify_artifact
+from examples.snapshot_integrity import make_artifact, verify_artifact
 
 
 class SnapshotIntegrityTests(unittest.TestCase):
