@@ -1,1 +1,1 @@
-"""Public SKYNET V3 formal-specification and typed-IR subset. No solver or cognitive runtime."""
+"""SKYNET V3 public foundational utilities (selected subset)."""

@@ -1,7 +1,7 @@
 import unittest
-from V3.public_core.canonical import canonical_bytes, digest, strict_loads, CanonicalError
-from V3.public_core.errors import SkyError
-from V3.public_core.units import conform
+from public_core.canonical import canonical_bytes, digest, strict_loads, CanonicalError
+from public_core.errors import SkyError
+from public_core.units import conform
 
 class PublicCoreTests(unittest.TestCase):
     def test_canonical_key_order(self):

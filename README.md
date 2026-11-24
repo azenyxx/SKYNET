@@ -16,7 +16,7 @@ SKYNET is an engineering program investigating components and foundations releva
 | `SYS/` | SYS-001–008: runtime infrastructure |
 | `VAL/` | VAL-001–010: capability validation |
 | `V2/` | Selected V2 engineering source, tests and milestone documentation |
-| `V3/` | V3 engineering progress, public-safe source subset, and bounded experimental evidence |
+| `SKYNET V3/` | V3 engineering progress, public-safe source subset, and bounded experimental evidence |
 
 The original development program comprises **64 numbered stages**. Historical snapshots and audited runtime components are separate from the selected V2 public subset.
 
@@ -90,4 +90,4 @@ V3-003 integrates strategy selection, real task execution, counterexample refine
 
 The earlier V3-003 pilot observed strategy choice changing after failed execution, P1 recovery 3/3, and candidate-search caching reducing searches from 3 to 1 on one fixture. An earlier held-out T1 comparison scored 3/3 for all three paths; subsequent experiments advanced to actual learned-method execution on H1, H2 and H5. We are actively strengthening the integrated cognitive loop and developing rigorous, reproducible evaluations to test whether it can outperform strong planning baselines.
 
-See [V3/README.md](V3/README.md) for technical results, evaluation details, and the public code subset. **Our long-term mission is the full engineering realization of Artificial Superintelligence (ASI).**
+See [V3/README.md](SKYNET%20V3/README.md) for technical results, evaluation details, and the public code subset. **Our long-term mission is the full engineering realization of Artificial Superintelligence (ASI).**

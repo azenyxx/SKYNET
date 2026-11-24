@@ -1,41 +1,35 @@
-# SKYNET V3 — Intelligence Engines
+# SKYNET V3 — Public Verification Utilities
 
-SKYNET V3 is the third major generation of the SKYNET program developed by Cyberdyne Systems.
+This directory contains a limited public subset of engineering utilities and **eight standalone tests**. It does not contain the SKYNET cognitive engine or private evaluation harness.
 
-Its objective is to develop increasingly capable, measurable and verifiable cognitive systems.
+## Contents
 
-## Development Roadmap
+- `public_core/canonical.py`: deterministic JSON encoding, hashing and strict input parsing.
+- `public_core/errors.py`: structured validation errors.
+- `public_core/units.py`: integer quantity matching and exact, bounded scaling.
+- `tests/test_public_core.py`: reproducible public unit tests.
 
-| Stage | Focus |
-|---|---|
-| V3-001 | First Intelligence Engine |
-| V3-002 | Advanced Learning & Novel Method Creation |
-| V3-003 | Knowledge Transfer & Cognitive Generalization |
-| V3-004 | Verifiable Recursive Self-Improvement |
-| V3-005 | Comparative Evaluation |
-| V3-006 | Independent Qualification |
+Run from the repository root:
 
-## Current Development Baseline
+```bash
+PYTHONPATH="SKYNET V3:." python3 -m unittest discover -s "SKYNET V3/tests" -p 'test_*.py' -v
+```
 
-V3-001 E-01 through E-20 has been consolidated as a frozen development candidate.
+## What these tests establish
 
-It includes planning, execution, evidence persistence, method synthesis, development learning and evaluation infrastructure.
+The public tests exercise the **published utilities only**. They do not reproduce the private cognitive-loop, adaptation, transfer, security-infrastructure or benchmark evaluations. Internal source code, schemas, operational parameters, credentials and unpublished evidence are not included.
 
-The baseline remains subject to qualification. Some integration requirements, historical regressions and evaluation gates remain unresolved.
+This is a selective engineering disclosure, not an independently verified ASI claim. Licensing remains governed by the repository's applicable license, if any.
 
-V3-002 focuses on advanced learning and novel method creation. Its architecture requires review and approval before implementation.
+## Public Update 001
 
-## Tools
+Additional public V3 utilities:
 
-The `tools/` directory is reserved for V3 development utilities, reproducibility helpers and supporting engineering tools.
+- skynet_v3/canonical.py — deterministic JSON serialization.
+- skynet_v3/errors.py — validation errors.
+- skynet_v3/units.py — integer quantity operations.
+- tests/test_public_v3.py — 15 unit tests.
 
-## Verification Principles
+Run from the V3 directory:
 
-- Evidence-based development
-- Reproducible execution
-- Bounded resource consumption
-- Explicit trust boundaries
-- Independent qualification
-- No unsupported capability claims
-
-Copyright Cyberdyne Systems.
+    python3 -m unittest discover -s tests -p "test_*.py" -v
