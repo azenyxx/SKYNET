@@ -1,35 +1,58 @@
-# SKYNET V3 — Public Verification Utilities
+# SKYNET V3 — Cognitive Engineering Research
 
-This directory contains a limited public subset of engineering utilities and **eight standalone tests**. It does not contain the SKYNET cognitive engine or private evaluation harness.
+**An executable, ASI-oriented research program. Not a completed AGI or ASI system.**
 
-## Contents
+SKYNET V3 investigates how autonomous software can plan under constraints, execute safely, verify outcomes, retain research state and use feedback to inform subsequent decisions. A validated learning advantage over strong fixed strategies remains an open research objective.
 
-- `public_core/canonical.py`: deterministic JSON encoding, hashing and strict input parsing.
-- `public_core/errors.py`: structured validation errors.
-- `public_core/units.py`: integer quantity matching and exact, bounded scaling.
-- `tests/test_public_core.py`: reproducible public unit tests.
+## Engineering capability map
 
-Run from the repository root:
+| Area | Current status | Where to look |
+| --- | --- | --- |
+| Task planning, execution and replanning | Implemented in the **private** research runtime | [Architecture](docs/architecture/ARCHITECTURE.md) |
+| Deterministic validation, canonical encoding and bounded units | Public executable utilities | [`public_core/`](public_core/) |
+| Public canonicalization and structured errors | Public executable modules | [`skynet_v3/`](skynet_v3/) and [`src/skynet_v3/`](src/skynet_v3/) |
+| Replanning capture, statistical accounting and snapshot integrity | Standalone **public examples**, not the full private harness | [`examples/`](examples/) |
+| Public verification tests | Executable tests for disclosed code only | [`tests/`](tests/) |
+| Internal research results and negative findings | Publicly documented summaries; raw private evidence not released | [Research status](docs/research/RESEARCH-STATUS.md) |
 
-```bash
-PYTHONPATH="SKYNET V3:." python3 -m unittest discover -s "SKYNET V3/tests" -p 'test_*.py' -v
+## Cognitive pipeline
+
+```mermaid
+flowchart LR
+    A["Task"] --> B["Plan"]
+    B --> C["Execute"]
+    C --> D["Verify"]
+    D --> E["Feedback"]
+    E --> F["Evaluate Strategy"]
+    F --> G["Persist / Re-evaluate"]
 ```
 
-## What these tests establish
+Stages reflect the **research architecture**, not a claim that all stages have been independently qualified as one self-improving system.
 
-The public tests exercise the **published utilities only**. They do not reproduce the private cognitive-loop, adaptation, transfer, security-infrastructure or benchmark evaluations. Internal source code, schemas, operational parameters, credentials and unpublished evidence are not included.
+## Research snapshot — 24 November 2026
 
-This is a selective engineering disclosure, not an independently verified ASI claim. Licensing remains governed by the repository's applicable license, if any.
+- **24/24** matching independent-process semantic results reported in limited L1 testing.
+- **40/52** successful tasks in a previous planning pilot, with **no success-rate advantage** over the baseline.
+- **16** novel AST forms produced experimentally; **new useful skill acquisition not demonstrated**.
+- **0/38** historical observations showed neighborhood-selection improvement over the strongest fixed strategy in the tested method space.
+- **140/140** internally reported tests in the Session 22 current P2 regression partition; this is **not** the public test count.
+- **L3–L6 not qualified; Security 002B open; P3 not authorized.**
 
-## Public Update 001
+[Full research status](docs/research/RESEARCH-STATUS.md) · [Architecture](docs/architecture/ARCHITECTURE.md) · [Public code map](docs/architecture/PUBLIC-CODE-MAP.md) · [Updates](docs/updates/)
 
-Additional public V3 utilities:
+## Run public tests
 
-- skynet_v3/canonical.py — deterministic JSON serialization.
-- skynet_v3/errors.py — validation errors.
-- skynet_v3/units.py — integer quantity operations.
-- tests/test_public_v3.py — 15 unit tests.
+From repository root:
 
-Run from the V3 directory:
+```bash
+PYTHONPATH="$PWD/SKYNET V3:$PWD" \
+python3 -m unittest discover -s "SKYNET V3/tests" -p 'test_*.py' -v
+```
 
-    python3 -m unittest discover -s tests -p "test_*.py" -v
+Tests verify only **published** Python modules and examples. No private implementation, protected evaluation data or internal snapshots are supplied.
+
+## Research boundaries
+
+The next target is a reproducible **Planning → Execution → Verification → Feedback → Behavioral Adaptation → Persistent State → Re-evaluation** demonstration and a statistically defensible comparison with fixed baselines. No learning advantage is asserted in advance.
+
+**[SKYNET home](../README.md)** · **[Project website](https://cyberdynesystem.cc/)**
