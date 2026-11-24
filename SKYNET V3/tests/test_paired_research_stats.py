@@ -1,6 +1,6 @@
 """Public deterministic tests. No private project sources or fixtures."""
 import unittest
-from V3.examples.paired_research_stats import paired_table, mcnemar_exact, wilson_interval, holm_adjust
+from examples.paired_research_stats import paired_table, mcnemar_exact, wilson_interval, holm_adjust
 
 
 class PairedResearchTests(unittest.TestCase):
